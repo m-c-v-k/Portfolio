@@ -1,12 +1,23 @@
-import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { About } from "./Pages/About";
+import { Index } from "./Pages/Index";
+import { Navigation } from "./Components/Navigation";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Cleanup in progress.</p>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Navigation />
+      </div>
+      <Routes>
+        <Route path="/About">
+          <About />
+        </Route>
+        <Route path="/">
+          <Index />
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 
