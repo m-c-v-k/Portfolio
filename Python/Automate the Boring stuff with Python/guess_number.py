@@ -40,11 +40,13 @@ def guess_number(counter):
             answer = "Correct! Your guessed the number in " + \
                 str(count) + " tries."
             controller = 1
+            print(answer)
             sys.exit()
 
         elif inp < correct:
             answer = "The number you are looking for is larger than " + \
                 str(inp)
+
         elif inp > correct:
             answer = "The number you are looking for is smaller than " + \
                 str(inp)

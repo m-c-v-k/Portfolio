@@ -75,6 +75,7 @@ def guess_number(counter):
         if inp == correct:
             answer = "Correct! Your guessed the number in " + \
                 str(count) + " tries."
+            print(answer)
             controller = 1
             sys.exit()
 
