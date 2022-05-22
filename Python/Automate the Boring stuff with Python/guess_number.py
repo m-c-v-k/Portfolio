@@ -1,45 +1,9 @@
-### Automate the Boring Stuff with Python ###
-# This is a quick write of the programs meant to be writtenby the reader
-# in the quite well-know book; Automate the Boring Stuff with Python.
-# This is to showcase some of the basic knowledge I got in Python,
-# as well as where it's from.
+### A basic Guess Number program ###
 
-from decimal import DivisionByZero
 import random
 import sys
 
-### Chapter 1 - Python Basics ###
-### My First Program ###
 
-'''
-print('Hello World')
-print('What\'s your name?')
-
-my_name = input()
-
-print('It\'s good to meet you, ' + my_name)
-print('The length of your name is:')
-print(len(my_name))
-
-print('What\'s your age?')
-my_age = input()
-print('You will be ' + str(int(my_age) + 1) + ' in a year.')
-'''
-
-
-### Chapter 2 - Flow Control ###
-
-'''
-i = 0
-while i <= 10:
-    print(i)
-    i += 1
-'''
-
-
-### Chapter 3 - Functions ###
-
-'''
 def guess_number(counter):
     """ A function for a basic guess the number game, where the user has 3 guesses.
     Checks the input if it's an integer or not, if it's not the user will be asked
@@ -95,34 +59,3 @@ def guess_number(counter):
 
 
 guess_number(0)
-'''
-
-'''
-def collatz_sequence():
-    inp = 1
-
-    try:
-        inp = int(input(' Please enter an integer:\n'))
-        if inp <= 0:
-            print(
-                'Divisions by 0 and negative numbers are out of reach for mere mortals.')
-            collatz_sequence()
-    except ValueError as ex:
-        collatz_sequence()
-
-    while inp != 1:
-
-        if inp % 2 == 0:
-            inp = inp // 2
-        elif inp % 2 == 1:
-            inp = inp * 3 + 1
-
-        print(inp)
-
-    sys.exit()
-
-
-collatz_sequence()
-'''
-
-### Chapter 4 - Lists ###
