@@ -164,3 +164,53 @@ messages = ['It is certain.',
 
 print(messages[random.randint(0, len(messages) - 1)])
 '''
+
+'''
+my_list = ['test', 'cat', 'dog', 'frog', 'bamboo']
+
+
+def comma_code(list):
+    """ A small function to turn a list into a single string with a comma
+        in between all list items.
+    """
+
+    list_as_string = ""
+
+    for i in range(len(list)):
+        if i in range(len(list) - 1):
+            list_as_string += list[i] + ", "
+        else:
+            list_as_string += list[i]
+
+    print(list_as_string)
+
+    return list_as_string
+
+
+comma_code(my_list)
+'''
+
+'''
+def character_picture_grid():
+    """ Prints a list containing lists rotaded 90 degrees clock-wise.
+    """
+    grid = [['.', '.', '.', '.', '.', '.'],
+            ['.', 'O', 'O', '.', '.', '.'],
+            ['O', 'O', 'O', 'O', '.', '.'],
+            ['O', 'O', 'O', 'O', 'O', '.'],
+            ['.', 'O', 'O', 'O', 'O', 'O'],
+            ['O', 'O', 'O', 'O', 'O', '.'],
+            ['O', 'O', 'O', 'O', '.', '.'],
+            ['.', 'O', 'O', '.', '.', '.'],
+            ['.', '.', '.', '.', '.', '.']]
+
+    for i in range(len(grid[0])):
+        for j in range(len(grid)):
+            if j < len(grid) - 1:
+                print(grid[j][i], end="")
+            else:
+                print(grid[j][i])
+
+
+character_picture_grid()
+'''
