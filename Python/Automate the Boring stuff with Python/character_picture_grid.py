@@ -1,3 +1,4 @@
+### A simple program to print a character picture ###
 def character_picture_grid():
     """ Prints a list containing lists rotaded 90 degrees clock-wise.
     """
