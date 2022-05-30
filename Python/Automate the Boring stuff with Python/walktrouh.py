@@ -261,7 +261,7 @@ the_board = {
     'low-L': ' ', 'low-M': ' ', 'low-R': ' '
 }
 
-
+'''
 def print_board(board):
     print(board['top-L'] + '|' + board['top-M'] + '|' + board['top-R'])
     print('-+-+-')
@@ -284,3 +284,100 @@ for i in range(9):
 
 
 print_board(the_board)
+'''
+
+all_guests = {
+    'Alice': {'apples': 5, 'pretzels': 12},
+    'Bob': {'sandwiches': 3, 'apples': 1},
+    'Carol': {'cups': 3, 'pies': 3}
+}
+
+'''
+def total_brought(guests, item):
+    """ Checks for the total amount of items brought.
+
+    Args:
+        guests (Dictionary): A dictionary over all guests and what
+            they are brining in a subdictionary.
+        item (String): The item you want to check for.
+
+    Returns:
+        Int: Returns the ammount fo the specified item that is brought,
+            0 items by default.
+    """
+
+    num_brought = 0
+
+    for k, v in guests.items():
+        num_brought = num_brought + v.get(item, 0)
+
+    return num_brought
+
+
+print('Number of things being brought:')
+print(' - Apples ' + str(total_brought(all_guests, 'apples')))
+print(' - Cups ' + str(total_brought(all_guests, 'cups')))
+print(' - Cakes ' + str(total_brought(all_guests, 'cakes')))
+print(' - Ham Sandwiches ' + str(total_brought(all_guests, 'sandwiches')))
+print(' - Apple Pies ' + str(total_brought(all_guests, 'pies')))
+'''
+
+inventory = {
+    'arrow': 12,
+    'gold coin': 42,
+    'rope': 1,
+    'torch': 6,
+    'dagger': 1
+}
+
+dragon_loot = [
+    'gold coin',
+    'dagger',
+    'ruby',
+    'gold coin',
+    'gold coin',
+    'dragon\'s tooth'
+]
+
+'''
+def display_inventory(inventory):
+    """ Displays the player ionventory with ammount item.
+
+    Args:
+        inventory (Dictionary): A dictionary over items and the ammount of the items.
+    """
+
+    print('Inventory:')
+    item_total = 0
+
+    for k, v in inventory.items():
+        print(str(v) + ' ' + str(k))
+        item_total += v
+
+    print('Total number of items: ' + str(item_total))
+
+
+def add_to_inventory(inventory, added_items):
+    """ Adds items to the inventory
+
+    Args:
+        inventory (Dictionary): A dictionary over items and the ammount of the items.
+        added_items (List): A list over items to add to the inventory.
+    """
+
+    for item in added_items:
+        if item in inventory:
+            inventory[item] += 1
+        else:
+            inventory[item] = 1
+
+    print('Items added to your inventory.')
+
+
+display_inventory(inventory)
+add_to_inventory(inventory, dragon_loot)
+display_inventory(inventory)
+'''
+
+
+### Chapter 6 - Manipulating Strings ###
