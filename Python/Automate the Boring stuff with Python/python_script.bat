@@ -1,1 +1,0 @@
-@py.exe C:\Users\mcvk\Documents\programmering\Portfolio\Python %*
