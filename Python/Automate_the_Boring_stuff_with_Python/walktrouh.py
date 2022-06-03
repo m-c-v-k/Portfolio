@@ -10,6 +10,7 @@ from decimal import DivisionByZero
 import random
 import sys
 import pprint
+import pyperclip
 
 ### Chapter 1 - Python Basics ###
 ### My First Program ###
@@ -430,4 +431,39 @@ picnic_items = {
 
 print_picnic(picnic_items, 12, 5)
 print_picnic(picnic_items, 20, 6)
+'''
+
+'''
+passwords = {
+    'e-mail': 'F7minlBDDuvMJuxESSKHFhTxFtjVB6',
+    'blog': 'VmALvQyKAxiVH5G8v01if1MLZF3sdt',
+    'luggage': '12345'
+}
+
+if len(sys.argv) < 2:
+    print('Usage: python password_locker.py [account] - copy account password')
+    sys.exit()
+
+account = sys.argv[1]  # first command line arg is the account name
+
+if account in passwords:
+    pyperclip.copy(passwords[account])
+    print('Password for ' + account + ' copied to clipboard.')
+else:
+    print('There is no account name ' + account)
+'''
+
+'''
+text = pyperclip.paste()
+
+# Seperate lines and add stars
+
+lines = text.split('\n')
+
+for i in range(len(lines)):     # Loop throught ass indexes in the 'lines' list
+    lines[i] = '* ' + lines[i]  # Add star to each string in 'lines' list
+
+text = '\n'.join(lines)
+
+pyperclip.copy(text)
 '''
