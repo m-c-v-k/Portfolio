@@ -1,3 +1,5 @@
+#! python3
+
 ### A simple program to print out a list as a string ###
 
 my_list = ['test', 'cat', 'dog', 'frog', 'bamboo']

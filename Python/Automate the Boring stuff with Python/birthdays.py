@@ -1,3 +1,5 @@
+#! python3
+
 ### A simple program to remember birthdays ###
 
 birthdays = {'Alice': 'April 1', 'Bob': 'December 12', 'Carol': 'March 4'}

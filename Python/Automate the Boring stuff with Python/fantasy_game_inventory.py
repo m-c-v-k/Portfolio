@@ -1,3 +1,5 @@
+#! python3
+
 ### A Fantasy Game Inventory program ###
 
 inventory = {

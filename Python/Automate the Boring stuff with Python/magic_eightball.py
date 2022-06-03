@@ -1,3 +1,5 @@
+#! python3
+
 ### A Simple Magic 8Ball program ###
 
 import random

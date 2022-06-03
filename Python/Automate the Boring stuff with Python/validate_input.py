@@ -1,3 +1,5 @@
+#! python3
+
 ### A simple input validation program ###
 
 while True:

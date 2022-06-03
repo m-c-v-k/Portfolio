@@ -1,3 +1,5 @@
+#! python3
+
 ### Automate the Boring Stuff with Python ###
 # This is a quick write of the programs meant to be writtenby the reader
 # in the quite well-know book; Automate the Boring Stuff with Python.

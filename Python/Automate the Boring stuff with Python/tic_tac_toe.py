@@ -1,3 +1,5 @@
+#! python3
+
 ### A very basic Tic-Tac-Toe game ###
 
 the_board = {

@@ -1,3 +1,5 @@
+#! python3
+
 ### A simple character count program ###
 
 import pprint

@@ -1,3 +1,5 @@
+#! python3
+
 ### Print Picnic Table ###
 
 def print_picnic(item_dictionary, left_width, right_width):

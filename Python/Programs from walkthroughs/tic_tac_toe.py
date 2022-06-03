@@ -1,3 +1,5 @@
+#! python3
+
 ### A complete Tic-Tac-Toe game ###
 ### Made using http://inventwithpython.com/chapter10.html as guide ###
 

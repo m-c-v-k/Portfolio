@@ -1,3 +1,5 @@
+#! python3
+
 ### A program running the Collatz Sequence ###
 
 import sys
