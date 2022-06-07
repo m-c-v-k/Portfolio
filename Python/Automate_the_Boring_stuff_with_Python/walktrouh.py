@@ -11,6 +11,7 @@ import random
 import sys
 import pprint
 import pyperclip
+import re
 
 ### Chapter 1 - Python Basics ###
 ### My First Program ###
@@ -508,7 +509,7 @@ print_table(table_data)
 
 ### Part II - Automating tasks ###
 
-
+'''
 def is_phone_number(text):
     """ Checking if the text is a phone number or not.
 
@@ -561,3 +562,22 @@ def find_phone_number(text):
 
 find_phone_number(
     'Call me at 415-555-1011 tomorrow. 415-555-9999 is my office.')
+'''
+
+'''
+def search_phone_number_regex(text):
+    """search_phone_number_regex searches for phone numbers in any given string,
+    and printes the result.
+
+
+    Args:
+        text (string): any string to be checked for phone numbers
+    """
+
+    phone_number_regex = re.compile(r'\d{3}-\d{3}-\d{4}')
+    match_object = phone_number_regex.search(text)
+    print("Phone numer found: " + match_object.group())
+
+
+search_phone_number_regex('My number is 415-666-4242.')
+'''
