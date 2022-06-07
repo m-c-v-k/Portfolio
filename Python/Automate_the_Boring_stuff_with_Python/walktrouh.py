@@ -467,3 +467,97 @@ text = '\n'.join(lines)
 
 pyperclip.copy(text)
 '''
+
+'''
+table_data = [
+    ['apples', 'oranges', 'cherries', 'banana'],
+    ['Alice', 'Bob', 'Carol', 'David'],
+    ['dogs', 'cats', 'moose', 'goose']
+]
+
+def print_table(table_data):
+    """ Takes a list containing other lists and prints it neatly and right justified
+
+    Args:
+        table_data (List): A List containing other lists.
+    """
+
+    column_width = [0] * len(table_data)
+
+    for i, column_data in enumerate(table_data):
+
+        for row_item in column_data:
+            item_length = len(row_item)
+
+            if item_length > column_width[i]:
+                column_width[i] = item_length
+
+    num_columns = len(table_data)
+    num_rows = len(table_data[0])
+
+    for row_index in range(num_rows):
+
+        for column_index in range(num_columns):
+            print(table_data[column_index][row_index].rjust(
+                column_width[column_index]), end=' ')
+        print('')
+
+
+print_table(table_data)
+'''
+
+### Part II - Automating tasks ###
+
+
+def is_phone_number(text):
+    """ Checking if the text is a phone number or not.
+
+    Args:
+        text (string): String to be checked if it's a phone number or not.
+
+    Returns:
+        boolean: False if not a phone number (US standard), else True if it's a phone number
+    """
+
+    if len(text) != 12:
+        return False
+
+    for i in range(0, 3):
+        if not text[i].isdecimal():
+            return False
+
+    if text[3] != '-':
+        return False
+
+    for i in range(4, 7):
+        if not text[i].isdecimal():
+            return False
+
+    if text[7] != '-':
+        return False
+
+    for i in range(8, 12):
+        if not text[i].isdecimal():
+            return False
+
+    return True
+
+
+def find_phone_number(text):
+    """ Takes a string and checks if it contains any phone numbers.
+
+    Args:
+        text (string): A string to be chacked for any potential phonenumbers. 
+    """
+    for i in range(len(text)):
+
+        chunk = text[i:i+12]
+
+        if is_phone_number(chunk):
+            print('Phone number found: ' + chunk)
+
+    print('Search finished.')
+
+
+find_phone_number(
+    'Call me at 415-555-1011 tomorrow. 415-555-9999 is my office.')
