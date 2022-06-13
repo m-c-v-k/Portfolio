@@ -622,7 +622,9 @@ else:
 
 ### Chapter 8 - Reading and Writing Files ###
 
+"""
 hello_file = open(str(os.path.abspath(
     '.')) + '\\Python\\Automate_the_Boring_stuff_with_Python\\support_files\\hello.txt')
 hello_content = hello_file.read()
 print(hello_content)
+"""
