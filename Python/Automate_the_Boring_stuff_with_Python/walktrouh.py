@@ -6,12 +6,12 @@
 # This is to showcase some of the basic knowledge I got in Python,
 # as well as where it's from.
 
-from decimal import DivisionByZero
 import random
 import sys
 import pprint
 import pyperclip
 import re
+import os
 
 ### Chapter 1 - Python Basics ###
 ### My First Program ###
@@ -618,3 +618,11 @@ if len(matches) > 0:
 else:
     print("No phone numbers or E-mail adresses found.")
 """
+
+
+### Chapter 8 - Reading and Writing Files ###
+
+hello_file = open(str(os.path.abspath(
+    '.')) + '\\Python\\Automate_the_Boring_stuff_with_Python\\support_files\\hello.txt')
+hello_content = hello_file.read()
+print(hello_content)
