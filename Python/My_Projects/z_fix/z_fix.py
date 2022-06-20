@@ -9,17 +9,10 @@ import re
 
 
 def z_fix():
-
-    return
-
-
-def fix_handler():
     with open(str(os.getcwd()) + str(os.path.join('\\', 'Python', 'My_Projects', 'z_fix', 'fix.txt'))) as f:
         data = f.read()
 
     eval_data = ast.literal_eval(data)
-
-    #js_data = json.loads(data)
 
     # Print all fix locations and their z-coordinate.
     for num in range(len(eval_data)):
@@ -28,42 +21,86 @@ def fix_handler():
 
         print(str(places[num]) + ': ' + str(fix_position))
 
-    # Select existing fix location or new
-    selected = str(
-        input('Please enter your desired Z-location, create a new, remove, or cancel.\n'))
+    while True:
+        # Select existing fix location or new
+        selected = str(
+            input('Please enter your desired Z-location, create a new, edit, remove, or quit.\n'))
 
-    if selected.lower() == 'new':
+        if selected.lower() == 'new':
+            new_fix(eval_data)
+        elif selected.lower() == 'edit':
+            print("oops")
+        elif selected.lower() == 'remove':
+            print("oops")
+        elif selected.lower() == 'quit':
+            print("Good bye.")
+            break
+        else:
+            for i in places:
+                if selected.lower() == str(i).lower():
+                    calculate_z(eval_data[i])
+                    break
+                elif i == places[-1]:
+                    print("That is not a valid choice, please try again.")
+                else:
+                    pass
 
-        placement = input(
-            'Please enter the placement of the fixed position:\n')
+    return None
 
+
+def new_fix(eval_data):
+    ''' new_fix lets the user create and save a new fixed position
+
+    Args:
+        eval_data (Dictionary): A Dictionary over all saved fixed positions.
+
+    Returns:
+        NoneType: Returns a matchobject or None.
+    '''
+    placement = input(
+        'Please enter the placement of the fixed position:\n')
+
+    while True:
         try:
             # Controll the z-cordinates
             height = input('Please enter the Z-index of the fixed position:\n')
-            cordinate_test = re.compile(r"\d{0,4}\.\d{3}")
-            mo = cordinate_test.search(height)
-            print(mo)
-            mo != None
-        except TypeError as e:
+            cordinate_test = re.compile(r"\d+\.\d{3}")
+            mo = re.fullmatch(cordinate_test, height)
+            if mo is None:
+                x
+            break
+
+        except:
             print("Please enter digits and seperator '.' only.")
-            raise e
 
-        adder = eval_data
-        adder[placement] = height
-        print(adder)
+    adder = eval_data
+    adder[placement] = height
+    print(adder)
 
-        with open(str(os.getcwd()) + str(os.path.join('\\', 'Python', 'My_Projects', 'z_fix', 'fix.txt')), 'w') as f:
-            add_data = f.write(str(adder))
+    with open(str(os.getcwd()) + str(os.path.join('\\', 'Python', 'My_Projects', 'z_fix', 'fix.txt')), 'w') as f:
+        add_data = f.write(str(adder))
 
-    elif selected.lower() == 'cancel':
-        print("oops")
-    elif selected.lower() == 'remove':
-        print("oops")
+    return mo
+
+
+def calculate_z(z_position):
+
+    measured_z = float(
+        input("What is the current measurement for the fix position?\n"))
+    desired_z = float(input("Please enter the desired Z-position.\n"))
+
+    z_position = float(z_position)
+    change_by = z_position - desired_z
+    set_position = measured_z - abs(change_by) * 100
+
+    if z_position < desired_z:
+        print("You need to raise the laser measurer with " +
+              str(set_position) + ' centimeters.')
+    elif desired_z > z_position:
+        print("You need to lower the laser measurer with " +
+              str(set_position) + ' centimeters.')
     else:
-        # TODO
-        print("oops")
-
-        # Remove fix location
+        print("There's no need to change the laser measurement.")
 
 
-fix_handler()
+z_fix()
