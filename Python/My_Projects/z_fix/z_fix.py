@@ -24,14 +24,15 @@ def z_fix():
     while True:
         # Select existing fix location or new
         selected = str(
-            input('Please enter your desired Z-location, create a new, edit, remove, or quit.\n'))
+            input('''Please enter your desired Z-location, 
+            create a new, continue, edit, remove, or quit.\n'''))
 
         if selected.lower() == 'new':
             new_fix(eval_data)
         elif selected.lower() == 'edit':
-            print("oops")
+            print("edit")
         elif selected.lower() == 'remove':
-            print("oops")
+            print("remove")
         elif selected.lower() == 'quit':
             print("Good bye.")
             break
@@ -57,6 +58,7 @@ def new_fix(eval_data):
     Returns:
         NoneType: Returns a matchobject or None.
     '''
+
     placement = input(
         'Please enter the placement of the fixed position:\n')
 
@@ -92,15 +94,52 @@ def calculate_z(z_position):
     z_position = float(z_position)
     change_by = z_position - desired_z
     set_position = measured_z - abs(change_by) * 100
+    new_measured = measured_z + change_by * 100
 
     if z_position < desired_z:
-        print("You need to raise the laser measurer with " +
-              str(set_position) + ' centimeters.')
-    elif desired_z > z_position:
         print("You need to lower the laser measurer with " +
-              str(set_position) + ' centimeters.')
+              str(set_position) + ' centimeters to ' + str(new_measured) + '.')
+        # TODO save current z-position and measure.
+        save_current(new_measured, desired_z)
+    elif z_position > desired_z:
+        print("You need to raise the laser measurer with " +
+              str(set_position) + ' centimeters to ' + str(new_measured) + ' for a z-position of ' + desired_z + '.')
+        # TODO save current z-position and measure.
+        save_current(new_measured, desired_z)
     else:
         print("There's no need to change the laser measurement.")
+        # TODO save current z-position and measure.
+        save_current(new_measured, desired_z)
+
+
+def save_current(measured, z_pos):
+    '''save_current saves the current z-position and measurement, in order
+    to allow the user to change from the current position to a new one.
+
+    Args:
+        measured (Float): A float containing the position on the measure-stick.
+        z_pos (Float): The z-position that is being measured.
+
+    Returns:
+        Dictionary: A dictionary over the latest measurement.
+    '''
+
+    with open(str(os.getcwd()) + str(os.path.join('\\', 'Python', 'My_Projects', 'z_fix', 'continue.txt')), 'w+') as f:
+        new_save[z_pos] = measured
+        save_data = f.write(str(new_save))
+
+    return new_save
+
+
+def continue_measure():
+
+    with open(str(os.getcwd()) + str(os.path.join('\\', 'Python', 'My_Projects', 'z_fix', 'continue.txt'))) as f:
+        data = f.read()
+
+    eval_data = ast.literal_eval(data)
+
+    # Print current measure and then allow the user to change measurement to new z-position.
+    print(str(places[num]) + ': ' + str(fix_position))
 
 
 z_fix()
