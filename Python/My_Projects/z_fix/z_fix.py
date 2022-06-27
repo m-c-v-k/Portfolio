@@ -11,17 +11,17 @@ import re
 def z_fix():
     with open(str(os.getcwd()) + str(os.path.join('\\', 'Python', 'My_Projects', 'z_fix', 'fix.txt')), 'r') as f:
         data = f.read()
-
         eval_data = ast.literal_eval(data)
 
-    # Print all fix locations and their z-coordinate.
-    for num in range(len(eval_data)):
-        places = list(eval_data.keys())
-        fix_position = eval_data[places[num]]
-
-        print(str(places[num]) + ': ' + str(fix_position))
-
     while True:
+
+        # Print all fix locations and their z-coordinate.
+        for num in range(len(eval_data)):
+            places = list(eval_data.keys())
+            fix_position = eval_data[places[num]]
+
+            print(str(places[num]) + ': ' + str(fix_position))
+
         # Select existing fix location or new
         selected = str(
             input('Please enter your desired Z-location, ' +
@@ -62,21 +62,8 @@ def new_fix(eval_data):
         NoneType: Returns a matchobject or None.
     '''
 
-    placement = input(
-        'Please enter the placement of the fixed position:\n')
-
-    while True:
-        try:
-            # Controll the z-cordinates
-            height = input('Please enter the Z-index of the fixed position:\n')
-            cordinate_test = re.compile(r"\d+\.\d{3}")
-            mo = re.fullmatch(cordinate_test, height)
-            if mo is None:
-                x
-            break
-
-        except:
-            print("Please enter digits and seperator '.' only.")
+    placement = input('Please enter the placement of the fixed position:\n')
+    height = test_z()
 
     adder = eval_data
     adder[placement] = height
@@ -106,7 +93,7 @@ def change_z():
     z_position = z[0]
     old_measured = m[0]
 
-    desired_z = float(input("Please enter the desired Z-position.\n"))
+    test_z()
 
     z_position = float(z_position)
     change_by = z_position - desired_z
@@ -127,6 +114,8 @@ def set_z(z_position):
 
     measured_z = float(
         input("What is the current measurement for the fix position?\n"))
+
+    ###
 
     print(str(z_position) + " set to " + str(measured_z) + ".")
     save_current(z_position, measured_z)
@@ -178,6 +167,8 @@ def delete_fix(eval_data):
 
     usr_inp = input("Please enter the fix you'd like to remove:\n")
 
+    # TODO
+
     eval_data.pop(usr_inp)
 
     with open(str(os.getcwd()) + str(os.path.join('\\', 'Python', 'My_Projects', 'z_fix', 'fix.txt')), 'w+') as f:
@@ -198,7 +189,7 @@ def edit_fix(eval_data):
     '''
 
     usr_inp_fix = input("Please enter the fix you'd like to edit:\n")
-    usr_inp_pos = input("Please enter the new z-pos for the fix:\n")
+    usr_inp_pos = test_z()
 
     eval_data[usr_inp_fix] = usr_inp_pos
 
@@ -207,6 +198,42 @@ def edit_fix(eval_data):
         f.write(str(eval_data))
 
     return eval_data
+
+
+def test_z():
+
+    while True:
+        try:
+            # Controll the z-cordinates
+            desired_z = input("Please enter the desired Z-position:\n")
+            cordinate_test = re.compile(r"\d+\.\d{3}")
+            mo = re.fullmatch(cordinate_test, desired_z)
+            if mo is None:
+                x
+            break
+
+        except:
+            print("Please enter digits and seperator '.' only.")
+
+    return desired_z
+
+
+def test_measure():
+    while True:
+        try:
+            # Controll the measure
+            desired_measure = float(
+                input("Please enter the measured height:\n"))
+            measure_test = re.compile(r"\d[1,3]\.\d{1}")
+            mo = re.fullmatch(measure_test, desired_measure)
+            if mo is None:
+                x
+            break
+
+        except:
+            print("Please enter digits and seperator'.' only.")
+
+    return desired_measure
 
 
 z_fix()
