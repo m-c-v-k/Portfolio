@@ -7,9 +7,29 @@ import ast
 import os
 import re
 
+path = str(os.getcwd()) + str(os.path.join('\\',
+                                           'Portfolio', 'Python', 'My_Projects', 'z_fix\\'))
+
 
 def z_fix():
-    with open(str(os.getcwd()) + str(os.path.join('\\', 'Python', 'My_Projects', 'z_fix', 'fix.txt')), 'r') as f:
+    '''z_fix Main function for measuring Z-positions.
+
+    Returns:
+        None: None
+    '''
+
+    try:
+        # Checks if 'fix.txt' exists, otherwise it'll create the file.
+        if os.path.exists(path + 'fix.txt') == False:
+            x
+    except Exception as e:
+        # Creates 'fix.txt' and lets the user save a fixed position.
+        with open(path + 'fix.txt', 'w+') as f:
+            eval_data = {}
+            new_fix(eval_data)
+    # end try
+
+    with open(path + 'fix.txt') as f:
         data = f.read()
         eval_data = ast.literal_eval(data)
 
@@ -22,7 +42,7 @@ def z_fix():
 
             print(str(places[num]) + ': ' + str(fix_position))
 
-        # Select existing fix location or new
+        # Menu selection
         selected = str(
             input('Please enter your desired Z-location, ' +
                   'create a new, change z, edit, delete, or quit.\n'))
@@ -69,10 +89,10 @@ def new_fix(eval_data):
     adder[placement] = height
     print(adder)
 
-    with open(str(os.getcwd()) + str(os.path.join('\\', 'Python', 'My_Projects', 'z_fix', 'fix.txt')), 'w') as f:
+    with open(path + 'fix.txt', 'w') as f:
         add_data = f.write(str(adder))
 
-    return mo
+    return adder
 
 
 def change_z():
@@ -83,7 +103,7 @@ def change_z():
         Float: A float containing the new measured value.
     '''
 
-    with open(str(os.getcwd()) + str(os.path.join('\\', 'Python', 'My_Projects', 'z_fix', 'measured.txt'))) as f:
+    with open(path + 'measured.txt') as f:
         data = f.read()
 
         eval_data = ast.literal_eval(data)
@@ -96,7 +116,7 @@ def change_z():
     test_z()
 
     z_position = float(z_position)
-    change_by = z_position - desired_z
+    change_by = z_position - old_measured
     new_measured = old_measured + change_by * 100
 
     print("Set the laser to: " + str(new_measured) + '.')
@@ -110,6 +130,9 @@ def set_z(z_position):
 
     Args:
         z_position (string): A string containing the measured z_fix position.
+
+    Returns:
+        Float: A float containing the desired measured height.
     '''
 
     measured_z = float(
@@ -119,6 +142,8 @@ def set_z(z_position):
 
     print(str(z_position) + " set to " + str(measured_z) + ".")
     save_current(z_position, measured_z)
+
+    return measured_z
 
 
 def save_current(z_pos, measured):
@@ -133,7 +158,7 @@ def save_current(z_pos, measured):
         Dictionary: A dictionary over the latest measurement.
     '''
 
-    with open(str(os.getcwd()) + str(os.path.join('\\', 'Python', 'My_Projects', 'z_fix', 'measured.txt')), 'w+') as f:
+    with open(path + 'measured.txt', 'w+') as f:
         new_save = {}
         new_save[z_pos] = measured
         save_data = f.write(str(new_save))
@@ -146,13 +171,17 @@ def delete_file(file):
 
     Args:
         file (String): The file name of the file to be deleted.
+
+    Returns:
+        None: None
     '''
 
-    if os.path.exists(str(os.getcwd()) + str(os.path.join('\\', 'Python', 'My_Projects', 'z_fix', file))):
-        os.remove(str(os.getcwd()) + str(os.path.join('\\',
-                  'Python', 'My_Projects', 'z_fix', file)))
+    if os.path.exists(path + 'z_fix', file):
+        os.remove(path + file)
     else:
         print("The file does not exist.")
+
+    return None
 
 
 def delete_fix(eval_data):
@@ -167,11 +196,9 @@ def delete_fix(eval_data):
 
     usr_inp = input("Please enter the fix you'd like to remove:\n")
 
-    # TODO
-
     eval_data.pop(usr_inp)
 
-    with open(str(os.getcwd()) + str(os.path.join('\\', 'Python', 'My_Projects', 'z_fix', 'fix.txt')), 'w+') as f:
+    with open(path + 'fix.txt', 'w+') as f:
 
         f.write(str(eval_data))
 
@@ -193,7 +220,7 @@ def edit_fix(eval_data):
 
     eval_data[usr_inp_fix] = usr_inp_pos
 
-    with open(str(os.getcwd()) + str(os.path.join('\\', 'Python', 'My_Projects', 'z_fix', 'fix.txt')), 'w+') as f:
+    with open(path + 'fix.txt', 'w+') as f:
 
         f.write(str(eval_data))
 
@@ -201,11 +228,15 @@ def edit_fix(eval_data):
 
 
 def test_z():
+    ''' Checks if the user input is formatted correctly.
 
+    Returns:
+        Float: A float containing the desired Z-position.
+    '''
     while True:
         try:
             # Controll the z-cordinates
-            desired_z = input("Please enter the desired Z-position:\n")
+            desired_z = float(input("Please enter the desired Z-position:\n"))
             cordinate_test = re.compile(r"\d+\.\d{3}")
             mo = re.fullmatch(cordinate_test, desired_z)
             if mo is None:
@@ -219,6 +250,11 @@ def test_z():
 
 
 def test_measure():
+    ''' Checks if the user input is formatted correctly.
+
+    Returns:
+        Float: A float containing the desired measured height.
+    '''
     while True:
         try:
             # Controll the measure
