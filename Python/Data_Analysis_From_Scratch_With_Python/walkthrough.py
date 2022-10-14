@@ -4,8 +4,11 @@
 from sklearn.datasets import load_iris
 from sklearn import tree, datasets, linear_model
 from sklearn.metrics import accuracy_score, mean_squared_error, r2_score
+from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
 import numpy as np
 import matplotlib.pyplot as plt
+import pandas as pd
 
 '''
 # A Program which predicts species of an Iris flower based on lengths and width of its sepals
@@ -98,32 +101,67 @@ diabetes_X_train = diabetes_X[:-20]
 diabetes_X_test = diabetes_X[-20:]
 
 # Split the targets into training/testing sets
-diabetes_Y_train = diabetes.target[:-20]
-diabetes_Y_test = diabetes.target[-20:]
+diabetes_y_train = diabetes.target[:-20]
+diabetes_y_test = diabetes.target[-20:]
 
 # Create linear regression object
 regr = linear_model.LinearRegression()
 
 # Train the model using the training sets
-regr.fit(diabetes_X_train, diabetes_Y_train)
+regr.fit(diabetes_X_train, diabetes_y_train)
 
 # Make predictions usinng the testing set
-diabetes_Y_pred = regr.predict(diabetes_X_test)
+diabetes_y_pred = regr.predict(diabetes_X_test)
 
 # The coefficient
 print('Coefficients:\n', regr.coef_)
 # The mean squarded error
 print('Mean squared error: %.2f' %
-      mean_squared_error(diabetes_Y_test, diabetes_Y_pred))
+      mean_squared_error(diabetes_y_test, diabetes_y_pred))
 # Explain variance score: 1 is perfect prediction
-print('Variance score: %.2f' % r2_score(diabetes_Y_test, diabetes_Y_pred))
+print('Variance score: %.2f' % r2_score(diabetes_y_test, diabetes_y_pred))
 
 # Plot outputs
-plt.scatter(diabetes_X_test, diabetes_Y_test, color='black')
-plt.plot(diabetes_X_test, diabetes_Y_pred, color='blue', linewidth=3)
+plt.scatter(diabetes_X_test, diabetes_y_test, color='black')
+plt.plot(diabetes_X_test, diabetes_y_pred, color='blue', linewidth=3)
 
 plt.xticks(())
 plt.yticks(())
 
+plt.show()
+'''
+
+'''
+# Importing th dataset
+dataset = pd.read_csv(
+    'Data_Analysis_From_Scratch_With_Python//programs//Salary_Data.csv')
+X = dataset.iloc[:, :-1].values
+y = dataset.iloc[:, 1].values
+
+# Splitting the dataset into thre training set and test set
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=1/3, random_state=0)
+
+# Fitting simple linear regression to the training set
+regressor = LinearRegression()
+regressor.fit(X_train, y_train)
+
+# Predicting the test set result
+y_pred = regressor.predict(X_test)
+
+# Visualising the training set results
+plt.scatter(X_train, y_train, color='red')
+plt.plot(X_train, regressor.predict(X_train), color='blue')
+plt.title('Salary vs. Experience (Training set)')
+plt.xlabel('Years of Experience')
+plt.ylabel('Salary')
+plt.show()
+
+# Visualising the test set results
+plt.scatter(X_test, y_test, color='red')
+plt.plot(X_train, regressor.predict(X_train), color='blue')
+plt.title('Salary vs. Experience (Test set)')
+plt.xlabel('Years of Experience')
+plt.ylabel('Salary')
 plt.show()
 '''
