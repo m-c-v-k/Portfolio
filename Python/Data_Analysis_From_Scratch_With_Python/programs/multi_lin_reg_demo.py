@@ -31,3 +31,22 @@ X_train, X_test, y_train, y_test = train_test_split(
 # Fitting the linear regression
 regressor = LinearRegression()
 regressor.fit(X_train, y_train)
+
+# Predicting the test set result
+y_pred = regressor.predict(X_test)
+
+# Visualising the training set results
+plt.scatter(X_train, y_train, color='red')
+plt.plot(X_train, regressor.predict(X_train), color='blue')
+plt.title('50 Startups Training')
+plt.xlabel('Predictors')
+plt.ylabel('Target')
+plt.show()
+
+# Visualizing the test set results
+plt.scatter(X_test, y_test, color='red')
+plt.plot(X_test, regressor.predict(X_test), color='blue')
+plt.title('50 Startups Test')
+plt.xlabel('Predictors')
+plt.ylabel('Target')
+plt.show()
