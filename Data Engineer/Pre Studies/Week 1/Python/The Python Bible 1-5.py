@@ -88,3 +88,15 @@ print(math.log2(8))
 '''
 
 ### Section 5 - The ABCs - How to use Strings to handle text in Python ###
+
+# 5.20
+print("Hello")
+name = "Marcus"
+print(type(name))
+message = 'John said to me; "I will see you later".'
+long_string = """this
+is a long
+string"""
+print(long_string)
+hello = "Hello world!"
+print(hello)
