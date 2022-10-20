@@ -90,6 +90,7 @@ print(math.log2(8))
 ### Section 5 - The ABCs - How to use Strings to handle text in Python ###
 
 # 5.20
+'''
 print("Hello")
 name = "Marcus"
 print(type(name))
@@ -100,3 +101,48 @@ string"""
 print(long_string)
 hello = "Hello world!"
 print(hello)
+'''
+# 5.24
+'''
+print("hello".count("e"))
+text = "happy birthday"
+print(text.count("a"))
+print(text.count("day"))
+x = "Happy Birthday"
+print(x.lower())
+print(x.upper())
+print(x)
+x = x.upper()
+print(x)
+print(x.capitalize())
+x = x.lower()
+print(x)
+print(x.title())
+x = x.title()
+print(x)
+print(x.islower())
+print(x.isupper())
+print(x.istitle())
+print(x.isalnum())
+print("abcd".isalnum())
+print(x.isdigit())
+print("123".isdigit())
+y = "happybirthday123"
+print(y.isalnum())
+y = "happybirthday!123"
+print(y.isalnum())
+'''
+# 5.25
+
+x = "happy birthday"
+print(x.index("birthday"))
+print(x.find("sdgg"))
+y = "0000000000happybirthday0000000"
+print(y.strip("0"))
+print(y.lstrip("0"))
+print(y.rstrip("0"))
+print(y)
+
+name = input("What is your name? ").strip()
+print(name)
+print(len(name))

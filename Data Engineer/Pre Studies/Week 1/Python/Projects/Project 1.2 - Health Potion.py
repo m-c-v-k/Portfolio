@@ -1,6 +1,6 @@
 #! Python3
 
-# Project 1 - Crafting a Health Potion - Part 2
+# Project 1 - Part 2 - Crafting a Health Potion
 # A small program simulating the use of a health potions in a game.
 
 # 4.16

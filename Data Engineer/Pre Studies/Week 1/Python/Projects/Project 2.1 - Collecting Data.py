@@ -1,6 +1,6 @@
 #! Python3
 
-# Project 2 - Collecting Data - Part 1
+# Project 2 - Part 1 - Collecting Data
 # A small program collecting Data
 
 # Ask user for name
