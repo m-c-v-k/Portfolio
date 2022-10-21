@@ -1,6 +1,6 @@
 #! Python3
 
-# A walktrhough of the first five sections in 'The Python Bible' course
+# A walkthrough of the first five sections in 'The Python Bible' course
 
 import math
 
