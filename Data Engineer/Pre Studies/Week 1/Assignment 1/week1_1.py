@@ -1,7 +1,7 @@
 #! Python3
 
 """Python Challenges:
-Coding Challenge 1 – Extending the Health Potion Project
+Coding Challenge 1 - Extending the Health Potion Project
 In this challenge we are going to expand on the project from the Udemy course section 4 about the 
 health potion. We are going to remake this project with a couple of more operations, but without 
 the difficulty system.
@@ -14,3 +14,19 @@ attacks you pick up a health potion, which here means that you add 10 plus a ran
 between 10 and 15 to the health. So if you roll 14 as the random number for the potion (it should 
 be between 10 and 15 inclusive), you add 10+14=24 to the players health. In the end display 
 (print) the remaining health."""
+
+# Import necessary libraries
+import random
+
+# Create player health variable
+health = 100
+
+# Player gets attackes twice (with different random damage)
+health -= random.randint(20, 30)
+health -= random.randint(20, 30)
+
+# Player picks up a helth potion (with random restored health)
+health += 10 + random.randint(10, 15)
+
+# Display remaining player health
+print(health)
