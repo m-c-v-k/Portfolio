@@ -137,3 +137,18 @@ a.remove(2)
 print(a)
 '''
 # 7.42
+'''
+our_tuple = (1, 2, 3, "A", "B", "C")
+print(type(our_tuple))
+print(our_tuple[0:3])
+our_list = [1, 2, 3, 4, 5, 6, 7]
+our_list[2] = 100
+print(our_list)
+our_string = "1234567"
+our_list = tuple(our_list)
+print(type(our_list))
+(a, b, c) = 1, 2, 3
+print(a)
+print(b)
+print(c)
+'''
