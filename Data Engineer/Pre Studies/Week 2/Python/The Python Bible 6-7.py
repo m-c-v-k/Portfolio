@@ -107,3 +107,33 @@ print(our_table[2][1])
 print(our_table[1][1:])
 '''
 # 7.41
+'''
+a = [5, 12, 72, 55, 89]
+a = a + [1]
+print(a)
+a = a + ["BCD"]
+print(a)
+a = a + list("BCD")
+print(a)
+a = a + [1, 2, 3]
+print(a)
+a = a + list(str(123))
+print(a)
+a = [5, 12, 72, 55, 89]
+a = a + [[5, 6, 7, 8]]
+print(a)
+a.append([10, 11, 12, 13])
+print(a)
+a = [5, 12, 72, 55, 89]
+a = a.append(10)
+print(type(a))
+a = [5, 12, 72, 55, 89]
+a.insert(2, 100)
+print(a)
+a[0] = 2
+print(a)
+a = [1, 2, 3]
+a.remove(2)
+print(a)
+'''
+# 7.42
