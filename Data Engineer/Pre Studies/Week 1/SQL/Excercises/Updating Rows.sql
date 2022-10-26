@@ -16,6 +16,6 @@ WHERE first_name = 'John';
 
 SELECT * From customers;
 
--- Exercise: UPDATE ERics age to 27
+-- Exercise: UPDATE Erics age to 27
 UPDATE customers SET age = 27
 WHERE first_name = 'Eric';
