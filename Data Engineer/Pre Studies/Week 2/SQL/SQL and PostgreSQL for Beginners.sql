@@ -109,3 +109,14 @@ SELECT * FROM movie_revenues
 ORDER BY revenue_id
 LIMIT 5 OFFSET 5;
 
+-- 5.44
+SELECT movie_id, movie_name FROM movies
+FETCH FIRST 1 ROW ONLY;
+
+SELECT movie_id, movie_name FROM movies
+FETCH FIRST 10 ROW ONLY;
+
+SELECT movie_id, movie_name FROM movies
+OFFSET 8 ROWS
+FETCH FIRST 10 ROW ONLY;
+
