@@ -120,3 +120,12 @@ SELECT movie_id, movie_name FROM movies
 OFFSET 8 ROWS
 FETCH FIRST 10 ROW ONLY;
 
+-- 5.45
+SELECT DISTINCT movie_lang FROM movies
+ORDER BY movie_lang;
+
+SELECT DISTINCT movie_lang, age_certificate FROM movies
+ORDER BY movie_lang;
+
+SELECT DISTINCT * FROM movies;
+
