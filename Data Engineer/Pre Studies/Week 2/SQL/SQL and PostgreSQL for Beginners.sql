@@ -129,3 +129,20 @@ ORDER BY movie_lang;
 
 SELECT DISTINCT * FROM movies;
 
+-- 5.48
+SELECT * FROM actors
+WHERE date_of_birth IS NULL;
+
+SELECT * FROM actors
+WHERE date_of_birth IS NOT NULL;
+
+SELECT * FROM movie_revenues
+ORDER BY domestic_takings DESC;
+
+SelECT * FROM movie_revenues
+WHERE domestic_takings IS NOT NULL
+ORDER BY domestic_takings DESC;
+
+SELECT * FROM movie_revenues
+WHERE international_takings IS NULL;
+
