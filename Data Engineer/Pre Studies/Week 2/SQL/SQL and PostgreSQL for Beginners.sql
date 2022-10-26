@@ -103,3 +103,9 @@ ORDER BY actor_id DESC;
 SELECT actor_id, first_name, last_name, date_of_birth from actors
 WHERE gender = 'F'
 ORDER BY date_of_birth DESC;
+
+-- 5.43
+SELECT * FROM movie_revenues
+ORDER BY revenue_id
+LIMIT 5 OFFSET 5;
+
