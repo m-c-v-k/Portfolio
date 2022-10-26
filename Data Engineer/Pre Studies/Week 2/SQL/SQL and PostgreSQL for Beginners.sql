@@ -157,3 +157,13 @@ SELECT last_name AS surname FROM directors
 WHERE last_name LIKE 'A%'
 ORDER BY surname;
 
+-- 5.50
+SELECT 'concat' || 'together' AS new_string;
+
+SELECT 'concat' || ' ' || 'together' AS new_string;
+
+SELECT CONCAT(first_name, last_name) AS full_name FROM actors;
+
+SELECT CONCAT(first_name, ' ', last_name) AS full_name FROM actors;
+
+SELECT CONCAT_WS(' ', first_name, last_name, date_of_birth) AS fullname FROM actors;
