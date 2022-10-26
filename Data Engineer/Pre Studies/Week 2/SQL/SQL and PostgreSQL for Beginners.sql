@@ -87,3 +87,19 @@ WHERE movie_length BETWEEN 90 AND 120;
 
 SELECT movie_name, movie_length FROM movies
 WHERE movie_lang BETWEEN 'E' AND 'P';
+
+-- 5.42
+SELECT * FROM actors;
+
+SELECT first_name, last_name, date_of_birth FROM actors
+ORDER BY first_name DESC;
+
+SELECT first_name, last_name, date_of_birth FROM actors
+ORDER BY first_name ASC;
+
+SELECT actor_id, first_name, last_name, date_of_birth FROM actors
+ORDER BY actor_id DESC;
+
+SELECT actor_id, first_name, last_name, date_of_birth from actors
+WHERE gender = 'F'
+ORDER BY date_of_birth DESC;
