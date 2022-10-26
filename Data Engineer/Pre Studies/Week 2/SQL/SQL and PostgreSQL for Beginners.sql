@@ -146,3 +146,14 @@ ORDER BY domestic_takings DESC;
 SELECT * FROM movie_revenues
 WHERE international_takings IS NULL;
 
+-- 5.49
+SELECT last_name FROM directors;
+
+SELECT last_name AS surname FROM directors;
+
+SELECT * FROM directors;
+
+SELECT last_name AS surname FROM directors
+WHERE last_name LIKE 'A%'
+ORDER BY surname;
+
