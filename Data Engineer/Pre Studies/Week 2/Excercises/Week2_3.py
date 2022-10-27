@@ -26,4 +26,47 @@ the user
 '''
 
 # Welcome message
-print("Welcome to the")
+print("Welcome to the Dictionaries and Key-Value Inputs program!")
+
+# Create dictionary
+my_dict = {}
+
+# Control loop
+while True:
+
+    # Guide message
+    print("Remember that you can always type 'print' to see the list or 'exit' to quit the " +
+          "application")
+
+    # Handler variables
+    check_inp = True
+    list_container = []
+
+    # Handling user input loop
+    while check_inp == True:
+
+        # Getting user input
+        user_inp = input(
+            "Please enter two words seperated by a blank space: ").strip().capitalize()
+
+        # Check if input is valid
+        if len(user_inp.split(" ")) == 2:
+            check_inp = False
+            list_container += user_inp.split(" ")
+
+        # Check if print command
+        elif user_inp == "Print":
+            print(my_dict)
+
+        elif user_inp == "Exit":
+            print(
+                "It was nice to meet you, I'll print out the dictionary as a parting gift:")
+            print(my_dict)
+            print("Good bye!")
+            quit()
+
+    # Places input into dictionary
+    if list_container[0] not in my_dict.keys():
+        my_dict[list_container[0]] = [list_container[1]]
+    elif list_container[0] in my_dict.keys() and list_container[1] not in my_dict[list_container[0]]:
+        my_dict[list_container[0]].append(list_container[1])
