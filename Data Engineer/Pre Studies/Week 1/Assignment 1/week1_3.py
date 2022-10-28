@@ -30,11 +30,13 @@ initials = 'mcvk'
 population_city = 7692
 population_earth = 7982631536
 weekday = 'friday'
+duration_course = '12 weeks'
 pi = math.pi
 
 text = f'''My initials are { initials } and I live in a city with the population of 
 { population_city }, which is almost nothing compared to the population on earth
 { population_earth }. These numbers were taken this { weekday } on October the 21st.
+And will most likely change during the duration of this course, which is {duration_course}.
 Also, I almost forgot to mention that pi is equal to roughly { pi }.'''
 
 print(text)

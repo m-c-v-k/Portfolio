@@ -18,7 +18,7 @@ have gotten their share? Write a python script to calculate this and print the r
 """
 
 # Sub-excercise 1
-print(345 / 12)
+print(345 % 12)
 
 # Sub-excercise 2
 x = 5
