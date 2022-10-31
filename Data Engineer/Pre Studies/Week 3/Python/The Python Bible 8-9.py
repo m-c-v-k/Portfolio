@@ -2,6 +2,8 @@
 
 # A walkthrough of section 8 and 9 in 'The Python Bible' course
 
+### Section 8 - Going Loopy - Loops in Python ###
+
 # 8.48
 '''
 while True:
@@ -75,3 +77,26 @@ words = ["the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"]
 answer = [[w.upper(), w.lower(), len(w)] for w in words]
 print(answer)
 '''
+
+### Section 9 - Getting Funky - Functions in Python ###
+
+# 9.57
+'''
+def add(x, y):
+    z = x + y
+    return z
+
+
+answer = add(3, 17)
+print(answer)
+
+
+def reverser(iter):
+
+    return iter[::-1]
+
+
+print_me = reverser("This is my string")
+print(print_me)
+'''
+# 9.58
