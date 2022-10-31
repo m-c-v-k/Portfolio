@@ -30,3 +30,24 @@ while len(l) < 3:
 print("Sprry list is full")
 print(l)
 '''
+# 8.50
+'''
+for i in range(1, 11):
+    print(i)
+
+for letter in "abcd":
+    print(letter)
+
+vowels = 0
+consonants = 0
+
+for letter in "iuosdhfioyhs0fr9ehdfouwbeugsdoifbgijsdbfuifghbsodihfodskngjbn":
+    if letter.lower() in "aeiou":
+        vowels += 1
+    elif letter == " ":
+        pass
+    else:
+        consonants += 1
+
+print(f"There are {vowels} vowels and {consonants} consonants.")
+'''
