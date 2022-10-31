@@ -51,3 +51,15 @@ for letter in "iuosdhfioyhs0fr9ehdfouwbeugsdoifbgijsdbfuifghbsodihfodskngjbn":
 
 print(f"There are {vowels} vowels and {consonants} consonants.")
 '''
+# 8.51
+'''
+students = {
+    "male": ["Tom", "Charlie", "Harry", "Frank"],
+    "female": ["Sarah", "Huda", "Samantha", "Emily", "Elizabeth"]
+}
+
+for key in students.keys():
+    for name in students[key]:
+        if "a" in name:
+            print(name)
+'''
