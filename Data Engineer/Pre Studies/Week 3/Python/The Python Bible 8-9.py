@@ -155,3 +155,13 @@ f1()
 f2()
 print(a)
 '''
+# 9.60
+'''
+
+def about(name, age, likes="Python"):
+    sentence = f"Meet {name}! They are {age} old and they like {likes}."
+    return sentence
+
+
+print(about("jack", 27))
+'''
