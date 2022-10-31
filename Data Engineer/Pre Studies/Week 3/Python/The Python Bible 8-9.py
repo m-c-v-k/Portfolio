@@ -165,3 +165,46 @@ def about(name, age, likes="Python"):
 
 print(about("jack", 27))
 '''
+# 9.61
+
+print(1, 2, 3, 4, 5)
+numbers = [1, 2, 3, 4, 5]
+print(numbers)
+print(*numbers)
+print("abc")
+print(*"abc")
+
+
+def add(x, y):
+    return x + y
+
+
+print(add(10, 10))
+
+
+def add(*numbers):
+    total = 0
+    for number in numbers:
+        total += number
+
+    return total
+
+
+print(add(1, 2, 3, 4, 5, 6, 7, 8, 9))
+
+
+def about(name, age, likes):
+    sentence = f"Meet {name}! They are {age} years old and they like {likes}."
+    return sentence
+
+
+dictionary = {"name": "Zhiyad", "age": 23, "likes": "Python"}
+print(about(**dictionary))
+
+
+def foo(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}:{value}")
+
+
+foo(hude="female", ziyad="male")
