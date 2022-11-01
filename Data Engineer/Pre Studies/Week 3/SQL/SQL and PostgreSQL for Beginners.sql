@@ -75,3 +75,17 @@ WHERE movie_length > 120
 GROUP BY movie_lang
 HAVING COUNT(movie_lang) > 1;
 
+-- 6.66
+SELECT 5 + 6 AS addition;
+SELECT 8 - 3 AS subtraction;
+SELECT 35 / 3 AS division;
+SELECT 4 * 6 AS multiplication;
+SELECT 15 % 4 AS modulus;
+
+SELECT 15 % 2 AS modulus;
+SELECT 8 % 2 AS modulus;
+
+SELECT * FROM movie_revenues;
+
+SELECT movie_id, (domestic_takings + international_takings) AS total_takings FROM movie_revenues;
+
