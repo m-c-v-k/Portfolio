@@ -65,3 +65,13 @@ SELECT movie_lang, MIN(movie_length), MAX(movie_length) FROM movies
 WHERE age_certificate = '15'
 GROUP BY movie_lang;
 
+-- 6.63
+SELECT movie_lang, COUNT(movie_lang) FROM movies
+GROUP BY movie_lang
+HAVING COUNT(movie_lang) > 1;
+
+SELECT movie_lang, COUNT(movie_lang) FROM movies
+WHERE movie_length > 120
+GROUP BY movie_lang
+HAVING COUNT(movie_lang) > 1;
+
