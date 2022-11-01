@@ -38,3 +38,9 @@ SELECT MIN(release_date) FROM movies;
 
 SELECT MAX(movie_name) FROM movies;
 SELECT MIN(movie_name) FROM movies;
+
+-- 5.59
+SELECT AVG(movie_length) FROM movies;
+
+SELECT AVG(movie_length) FROM movies
+WHERE age_certificate = '18';
