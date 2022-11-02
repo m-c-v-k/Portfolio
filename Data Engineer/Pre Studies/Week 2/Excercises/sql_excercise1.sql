@@ -16,8 +16,8 @@ CREATE DATABASE "Excercise"
 
 -- 1 Create table
 CREATE TABLE taco (
-	food_name VARCHAR(30) PRIMARY KEY,
-	food_type VARCHAR(30),
+	food_name TEXT PRIMARY KEY,
+	food_type TEXT,
 	food_rating INT CHECK ( food_rating >= 1 AND food_rating <= 5),
 	food_price DECIMAL(4,2) NOT NULL
 );
