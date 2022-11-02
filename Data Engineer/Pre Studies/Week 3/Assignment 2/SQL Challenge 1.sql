@@ -8,7 +8,7 @@ CREATE TABLE taco (
 	food_price DECIMAL(4,2) NOT NULL
 );
 
--- Inser values
+-- Insert values
 INSERT INTO taco (food_name, food_type, food_rating, food_price)
 VALUES ('Tortilla', 'Container', 3, 23.50),
 ('Cucumber', 'Vegeteble', 4, 13.95),
@@ -51,7 +51,7 @@ ORDER BY food_type, AVG(food_rating) DESC;
 
 -- 5: Write a SQL query that returns the least expensive item for each rating.
 
-SELECT food_rating, MIN(food_name), MIN(food_price) FROM taco
+SELECT food_rating, MIN(food_price) FROM taco
 GROUP BY food_rating
 ORDER BY food_rating;
 
