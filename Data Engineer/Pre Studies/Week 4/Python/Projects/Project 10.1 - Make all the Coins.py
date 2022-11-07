@@ -4,13 +4,27 @@
 # Creating the coin class.
 
 # Importing the necessary libraries
+import random
+
 
 class Coin:
-    def __init__(self, is_rare=False, clean=True, heads=True, **kwargs):
+    """ Parent class for different types of coins.
+    """
 
+    def __init__(self, is_rare=False, clean=True, heads=True, **kwargs):
+        """ Constructor function
+
+        Args:
+            is_rare (bool, optional): Lets the user define is coin is rare or not. Defaults to False.
+            clean (bool, optional): Lets the user define if the coin is clean or not. Defaults to True.
+            heads (bool, optional): Lets the user define is the coin is heads or tails. Defaults to True.
+        """
+
+        # Adds coin-specific data to the coin
         for key, value in kwargs.items():
             setattr(self, key, value)
 
+        # Non coin-specific data
         self.is_rare = is_rare
         self.is_clean = clean
         self.heads = heads
@@ -26,15 +40,23 @@ class Coin:
             self.colour = self.rusty_colour
 
     def __del__(self):
+        """ Handles coin destruction.
+        """
         print("Coin spent")
 
     def rust(self):
+        """ Handles colour depending on rusty or not.
+        """
         self.colour = self.rusty_colour
 
     def clean(self):
+        """ Handles colour if a coin is cleaned.
+        """
         self.colour = self.clean_colour
 
     def flip(self):
+        """ Simulates flipping a coin (heads or tail).
+        """
         heads_options = [True, False]
         choice = random.choice(heads_options)
         self.heads = choice
