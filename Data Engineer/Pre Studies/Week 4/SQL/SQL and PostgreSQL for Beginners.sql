@@ -136,3 +136,11 @@ SELECT first_name FROM directors
 UNION ALL
 SELECT first_name FROM actors
 ORDER BY first_name;
+
+-- 8.95
+SELECT first_name FROM directors
+WHERE nationality = 'American'
+INTERSECT
+SELECT first_name FROM actors
+ORDER BY first_name;
+
