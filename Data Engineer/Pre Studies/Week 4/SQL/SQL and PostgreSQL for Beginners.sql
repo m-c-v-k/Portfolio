@@ -46,3 +46,22 @@ FROM movies mo
 JOIN movie_revenues mr USING (movie_id)
 WHERE mo.age_certificate IN ('12', '15', '18')
 ORDER BY mr.domestic_takings DESC;
+
+-- 8.83
+SELECT d.director_id, d.first_name, d.last_name, mo.movie_name
+FROM directors d
+LEFT JOIN movies mo
+ON d.director_id = mo.director_id;
+
+SELECT d.director_id, d.first_name, d.last_name, mo.movie_name
+FROM movies mo
+LEFT JOIN directors d
+ON d.director_id = mo.director_id;
+
+SELECT d.director_id, d.first_name, d.last_name, mo.movie_name
+FROM directors d
+LEFT JOIN movies mo
+ON d.director_id = mo.director_id
+WHERE d.nationality = 'British';
+
+-- 8.84
