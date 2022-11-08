@@ -37,3 +37,12 @@ JOIN movie_revenues mr ON mo.movie_id = mr.movie_id
 ORDER BY mr.domestic_takings;
 
 -- 8.80
+SELECT mo.movie_name, mr.domestic_takings
+FROM movies mo
+JOIN movie_revenues mr USING (movie_id);
+
+SELECT mo.movie_name, mr.domestic_takings
+FROM movies mo
+JOIN movie_revenues mr USING (movie_id)
+WHERE mo.age_certificate IN ('12', '15', '18')
+ORDER BY mr.domestic_takings DESC;
