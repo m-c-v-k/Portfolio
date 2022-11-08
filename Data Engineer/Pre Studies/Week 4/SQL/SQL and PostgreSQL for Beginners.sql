@@ -151,3 +151,8 @@ EXCEPT
 SELECT first_name FROM actors
 ORDER BY first_name;
 
+
+-- Section 9:SQL & PostgreSQL: Subqueries
+
+
+
