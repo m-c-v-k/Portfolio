@@ -10,7 +10,7 @@
 SELECT * FROM directors;
 
 INSERT INTO directors (first_name, last_name, date_of_birth, nationality)
-VALUES ('Christopher', 'Nolan', '1970-07-30', 'Brittish');
+VALUES ('Christopher', 'Nolan', '1970-07-30', 'British');
 
 SELECT * FROM movies;
 
@@ -75,3 +75,21 @@ FROM directors d
 RIGHT JOIN movies mo
 ON d.director_id = mo.director_id
 WHERE age_certificate = '18';
+
+-- 8.85
+SELECT d.director_id, d.first_name, d.last_name, mo.movie_name
+FROM movies mo
+FULL JOIN directors d
+ON d.director_id = mo.director_id;
+
+SELECT d.director_id, d.first_name, d.last_name, mo.movie_name
+FROM directors d
+FULL JOIN movies mo
+ON d.director_id = mo.director_id;
+
+SELECT d.director_id, d.first_name, d.last_name, mo.movie_name
+FROM movies mo
+FULL JOIN directors d
+on d.director_id = mo.director_id
+WHERE mo.movie_lang IN ('German', 'Korean')
+ORDER BY d.last_name;
