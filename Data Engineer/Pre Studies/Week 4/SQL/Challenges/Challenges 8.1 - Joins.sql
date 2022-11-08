@@ -1,4 +1,4 @@
--- Section 7 - Challenge 1 - Database Relationships
+-- Section 8 - Challenge 1 - Joins
 
 -- 1
 SELECT d.first_name, d.last_name, mo.movie_name, mo.release_date
