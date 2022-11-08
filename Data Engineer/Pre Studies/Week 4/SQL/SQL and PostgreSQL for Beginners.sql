@@ -144,3 +144,10 @@ INTERSECT
 SELECT first_name FROM actors
 ORDER BY first_name;
 
+-- 8.96
+SELECT first_name FROM directors
+WHERE nationality = 'American'
+EXCEPT
+SELECT first_name FROM actors
+ORDER BY first_name;
+
