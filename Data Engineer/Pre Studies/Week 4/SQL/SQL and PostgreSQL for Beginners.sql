@@ -130,3 +130,9 @@ UNION
 SELECT first_name, last_name, date_of_birth FROM actors
 WHERE gender = 'F'
 ORDER BY first_name;
+
+-- 8.92
+SELECT first_name FROM directors
+UNION ALL
+SELECT first_name FROM actors
+ORDER BY first_name;
