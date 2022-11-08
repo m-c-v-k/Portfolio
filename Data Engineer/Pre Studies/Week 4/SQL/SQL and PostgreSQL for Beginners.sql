@@ -65,3 +65,13 @@ ON d.director_id = mo.director_id
 WHERE d.nationality = 'British';
 
 -- 8.84
+SELECT d.director_id, d.first_name, d.last_name, mo.movie_name
+FROM directors d
+RIGHT JOIN movies mo
+ON d.director_id = mo.director_id;
+
+SELECT d.director_id, d.first_name, d.last_name, mo.movie_name
+FROM directors d
+RIGHT JOIN movies mo
+ON d.director_id = mo.director_id
+WHERE age_certificate = '18';
