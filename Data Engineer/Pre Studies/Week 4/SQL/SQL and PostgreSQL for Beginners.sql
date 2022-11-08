@@ -118,3 +118,15 @@ JOIN movies mo ON d.director_id = mo.director_id
 JOIN movies_actors ma ON ma.movie_id = mo.movie_id
 JOIN actors ac ON ac.actor_id = ma.actor_id
 JOIN movie_revenues mr ON mr.movie_id = mo.movie_id;
+
+-- 8.91
+SELECT first_name, last_name FROM directors
+UNION 
+SELECT first_name, last_name FROM actors;
+
+SELECT first_name, last_name, date_of_birth FROM directors
+WHERE nationality = 'American'
+UNION
+SELECT first_name, last_name, date_of_birth FROM actors
+WHERE gender = 'F'
+ORDER BY first_name;
