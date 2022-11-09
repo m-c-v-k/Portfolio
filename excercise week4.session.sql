@@ -39,3 +39,21 @@ JOIN article_reads ar ON c.id = ar.customer_id
 GROUP BY c.name
 ORDER BY COUNT(ar.article_id) DESC
 LIMIT 10;
+
+-- 4 We want to contact active customers who could be interested in paper subscriptions. Write
+-- a query that finds all customers who have read more than 200 distinct articles and who do
+-- not have a paper subscription. The output should have two columns: name and distinct
+-- number of articles read. Order the results descending by number of distinct articles read.
+-- Hint 1: Be mindful of the JOIN type that you use.
+-- Hint 2: You may find combining COUNT and DISTINCT helpful.
+-- Hint 3: Remember that HAVING allows filtering on aggregation queries. Can you figure
+-- out how to apply it?
+
+SELECT c.name, COUNT(ar.article_id) AS distinc_articles
+FROM customer c
+JOIN article_reads ar ON c.id = ar.customer_id
+JOIN paper_subscription pr ON ar.customer_id = pr.customer_id
+WHERE pr.status = 'Active'
+GROUP BY c.name
+HAVING COUNT(ar.article_id) > 200;
+
