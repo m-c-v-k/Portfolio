@@ -154,5 +154,14 @@ ORDER BY first_name;
 
 -- Section 9:SQL & PostgreSQL: Subqueries
 
+-- 9.102
+SELECT movie_name, movie_length FROM movies
+WHERE movie_length > 
+(SELECT AVG(movie_length) FROM movies);
 
+SELECT first_name, last_name, date_of_birth FROM directors
+WHERE date_of_birth >
+(SELECT date_of_birth FROM actors
+WHERE first_name = 'Tom'
+AND last_name = 'Cruise');
 
