@@ -165,3 +165,18 @@ WHERE date_of_birth >
 WHERE first_name = 'Tom'
 AND last_name = 'Cruise');
 
+-- 9.103
+SELECT movie_name FROM movies
+WHERE movie_id IN (
+SELECT movie_id FROM movie_revenues
+WHERE international_takings > domestic_takings);
+
+SELECT mo.movie_id, mo.movie_name, d.first_name, d.last_name
+FROM movies mo
+JOIN directors d
+ON mo.director_id = d.director_id
+WHERE mo.movie_id IN (
+    SELECT movie_id FROM movie_revenues
+    WHERE international_takings > domestic_takings
+);
+
