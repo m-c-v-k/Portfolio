@@ -9,6 +9,16 @@
       "name": "Education database",
       "database": "movie_data",
       "username": "postgres"
+    },
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "excercise week4",
+      "database": "excercise_week4",
+      "username": "postgres",
+      "password": "MisoDaisy"
     }
   ]
 }
