@@ -20,8 +20,15 @@ from collections import defaultdict
 
 
 class MyCounter:
+    """ MyCounter class.
+    """
 
     def __init__(self, inp):
+        """ Constructor function, adds input to counter_dict.
+
+        Args:
+            inp (string/list): A string or list to be counted.
+        """
         # Creating a default dictionary
         self.counter_dict = defaultdict(lambda: "Not present")
 
@@ -33,9 +40,19 @@ class MyCounter:
                 self.counter_dict[inp[x]] = 1
 
     def get(self, key_item):
+        """ Prints the value for given key, gives not present if key does not exist.
+
+        Args:
+            key_item (string/int): A string or int to be checked against keys in counter_dict.
+        """
         print(self.counter_dict[key_item])
 
     def __str__(self):
+        """ Handles printing.
+
+        Returns:
+            string: A string printed with all keys and their corresponding values.
+        """
         self.output = "The counter_dict contains:\n"
 
         for key, value in self.counter_dict.items():
