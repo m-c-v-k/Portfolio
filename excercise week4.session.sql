@@ -57,3 +57,28 @@ WHERE pr.status = 'Active'
 GROUP BY c.name
 HAVING COUNT(ar.article_id) > 200;
 
+-- 5a) Which articles are the most popular in each country? Let’s find out! Start by writing a
+-- query that finds the number of times per country that an article has been read. The output
+-- should have three columns: country, article ID, and total reads. 
+
+SELECT c.country, ar.article_id, COUNT(ar.article_id) AS total_reads
+FROM customer c
+JOIN article_reads ar ON c.id = ar.customer_id
+GROUP BY c.country, ar.article_id
+ORDER BY c.country, COUNT(ar.article_id) DESC;
+
+-- 5b) What is the most popular query per country? Write a query to find out! Use the query
+-- above as a subquery. The output should have two columns: country and article name.
+
+SELECT c.country, a.name
+FROM customer c
+JOIN article_reads ar1 ON c.id = ar1.customer_id
+JOIN article a ON a.id = ar1.article_id
+WHERE ar1.article_id = (
+    SELECT COUNT(ar2.article_id) FROM article_reads ar2
+    WHERE ar1.article_id = ar2.article_id
+    GROUP BY ar1.article_id
+)
+GROUP BY c.country, a.name;
+
+SELECT * FROM article_reads
