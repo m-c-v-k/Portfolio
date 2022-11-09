@@ -32,3 +32,10 @@ ORDER BY c.name, ar.article_id;
 -- distinct articles. The output should have two columns: name and number of distinct articles
 -- read. The results should be sorted in descending order. Hint: Use ORDER BY and LIMIT, in
 -- addition to the commands above. 
+
+SELECT c.name, COUNT(ar.article_id) AS distinc_articles
+FROM customer c
+JOIN article_reads ar ON c.id = ar.customer_id
+GROUP BY c.name
+ORDER BY COUNT(ar.article_id) DESC
+LIMIT 10;
