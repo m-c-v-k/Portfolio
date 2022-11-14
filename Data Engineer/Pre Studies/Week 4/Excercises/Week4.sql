@@ -53,7 +53,7 @@ SELECT c.name, COUNT(DISTINCT ar.article_id) AS distinc_articles
 FROM customer c
 JOIN article_reads ar ON c.id = ar.customer_id
 JOIN paper_subscription pr ON ar.customer_id = pr.customer_id
-WHERE pr.status = 'Active'
+WHERE pr.status = 'Inactive'
 GROUP BY c.name
 HAVING COUNT(DISTINCT ar.article_id) > 200;
 
@@ -70,14 +70,4 @@ ORDER BY c.country, COUNT(ar.article_id) DESC;
 -- 5b) What is the most popular query per country? Write a query to find out! Use the query
 -- above as a subquery. The output should have two columns: country and article name.
 
-
-SELECT c.country, a.name AS total_reads
-FROM customer c
-JOIN article_reads ar ON c.id = ar.customer_id
-JOIN article a ON a.id = ar.article_id
-WHERE c.country = 'Sweden'
-OR c.country = 'Denmark'
-GROUP BY c.country, a.name
-ORDER BY COUNT(ar.article_id) DESC
-LIMIT 1
 
