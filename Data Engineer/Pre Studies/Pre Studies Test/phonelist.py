@@ -102,9 +102,9 @@ def delete_phone(conn, name):
                 # Executing statement.
                 cur.execute(f"""DELETE FROM phonelist
 WHERE name = '{name}';""")
-                print(f"{name} deleted.")
-            else:
-                print("Name not recognized.")
+            print(f"{name} deleted.")
+        else:
+            print("Name not recognized.")
 
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
