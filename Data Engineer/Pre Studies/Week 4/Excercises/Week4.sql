@@ -70,4 +70,14 @@ ORDER BY c.country, COUNT(ar.article_id) DESC;
 -- 5b) What is the most popular query per country? Write a query to find out! Use the query
 -- above as a subquery. The output should have two columns: country and article name.
 
-
+WITH rpc AS (
+    SELECT c.country, ar.article_id, COUNT(*) AS total_reads
+    FROM article_reads ar
+    JOIN customer c ON c.id = ar.customer_id
+    GROUP BY c.country, ar.article_id
+)
+SELECT rpc.country, a.name
+FROM rpc
+JOIN article a ON a.id = rpc.article_id
+GROUP BY rpc.country
+HAVING rpc.total_reads = MAX(rpc.total_reads);
