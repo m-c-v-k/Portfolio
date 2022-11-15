@@ -66,19 +66,3 @@ else:
         print("You won!")
     else:
         print("You lost!")
-
-
-"""
-
-A. Write a program that lets you guess behind which of 4 doors a prize is hidden.
-When the user makes their first guess one of the other doors (without a prize) will be
-opened, and then the user gets to attempt one more time.
-Example output
-“Guess the door (1-4): 3”
-“The door 2 has no prize”
-“Guess the door (1-4): 1”
-“Door 3 had the prize, you lost!”
-“Guess the door (1-4): 3”
-“The door 2 has no prize”
-“Guess the door (1-4): 3”
-“Door 3 had the prize, you won!”"""
