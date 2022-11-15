@@ -63,7 +63,7 @@ def add_phone(conn, name, phone):
 
         # Executing statement.
         cur.execute(f"""INSERT INTO phonelist (name, phone)
-        VALUES ('{name}', '{phone}');""")
+VALUES ('{name}', '{phone}');""")
         print(f"{name} added.")
 
     except (Exception, psycopg2.DatabaseError) as error:
@@ -100,7 +100,7 @@ def delete_phone(conn, name):
         if name in rows:
             # Executing statement.
             cur.execute(f"""DELETE FROM phonelist
-            WHERE name = '{name}';""")
+WHERE name = '{name}';""")
             print(f"{name} deleted.")
         else:
             print("Name not recognized.")
