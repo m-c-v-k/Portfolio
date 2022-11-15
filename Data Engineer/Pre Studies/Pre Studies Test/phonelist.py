@@ -97,13 +97,14 @@ def delete_phone(conn, name):
         # Check return from executed statement.
         rows = cur.fetchall()
 
-        if name in rows:
-            # Executing statement.
-            cur.execute(f"""DELETE FROM phonelist
+        for row in rows:
+            if name in row:
+                # Executing statement.
+                cur.execute(f"""DELETE FROM phonelist
 WHERE name = '{name}';""")
-            print(f"{name} deleted.")
-        else:
-            print("Name not recognized.")
+                print(f"{name} deleted.")
+            else:
+                print("Name not recognized.")
 
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
