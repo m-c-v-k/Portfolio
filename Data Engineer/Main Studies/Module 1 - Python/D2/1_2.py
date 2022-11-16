@@ -10,7 +10,11 @@ print(2 + 4**5)
 print(random.randint(0, 10))
 
 # 2a
+a = "42 "
+output = (a * 5)
+print(output[:-1])
 print(("42" + " ") * 4 + "42")
+print(np.repeat(42, 5))
 
 # 2b
 parrot = 15 / 2 + 3
