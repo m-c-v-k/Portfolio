@@ -66,3 +66,4 @@ else:
         print("You won!")
     else:
         print("You lost!")
+        print(f"The price was behind door number {door}!")
