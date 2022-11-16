@@ -139,3 +139,31 @@ def reverser(inp_list):
 
 reverser([1, 2, 3])
 """
+
+
+def reverser(inp_list):
+    n = len(inp_list)
+
+    # Optimizing the code, if no change is needed it won't have to do everything.
+    swapped = False
+
+    # Go through all entries in the list, there is no need for the last element.
+    for i in range(n-1):
+
+        # Go through the list up to the second last to current value (i)
+        for j in range(n-i-1):
+
+            # If j is bigger than the next item, swap place
+            if inp_list[j] > inp_list[j + 1]:
+                swapped = True
+                inp_list[j], inp_list[j + 1] = inp_list[j + 1], inp_list[j]
+
+        # If there is no need for any swaps by now, there won't be any swaps
+        # Exit loop
+        if not swapped:
+            return
+
+
+my_list = [64, 34, 25, 12, 22, 11, 90]
+reverser(my_list)
+print(my_list)
