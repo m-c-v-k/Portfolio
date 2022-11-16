@@ -5,7 +5,7 @@ import random
 from collections import defaultdict
 
 
-"""# 1a
+# 1a
 def get_user_initials():
     usr_inp = input("Please enter your name: ")
 
@@ -138,7 +138,6 @@ def reverser(inp_list):
 
 
 reverser([1, 2, 3])
-"""
 
 
 def reverser(inp_list):
