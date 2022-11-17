@@ -86,7 +86,7 @@ for num in range(1, 11):
     print(num)
 
 # 3b
-for num in range(15, 68, 7):
+for num in range(15, 69, 7):
     print(num)
 
 # 3c
