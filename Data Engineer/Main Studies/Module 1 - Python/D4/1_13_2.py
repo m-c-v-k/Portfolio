@@ -18,12 +18,10 @@ class Vector:
         return self.__class__(*v)
 
     def __mul__(self, other):
-        scalprod = [arg1 * arg2 for arg1, arg2 in zip(self.args, other.args)]
+        scalprod = sum(
+            [arg1 * arg2 for arg1, arg2 in zip(self.args, other.args)])
 
-        output = 0
-        for x in range(len(scalprod)):
-            output += scalprod[x]
-        return output
+        return scalprod
 
 
 v1 = Vector(1, 1, 5.1)
