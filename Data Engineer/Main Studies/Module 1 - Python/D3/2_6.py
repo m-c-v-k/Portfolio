@@ -30,8 +30,11 @@ print(new_sentence)
 
 # 3
 word = "hello"
-placeholder = ["_", "_", "_", "_", "_"]
+placeholder = []
 attempts = 0
+
+for x in range(len(word)):
+    placeholder.append("_")
 
 while True:
     guess = input("Guess a character: ").lower()
