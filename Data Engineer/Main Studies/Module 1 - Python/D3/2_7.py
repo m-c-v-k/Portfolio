@@ -8,7 +8,7 @@ rand_num = 1 + npr.randint(20)
 guess_num = -1
 game_over = False
 
-while not(game_over):
+while not (game_over):
     guess_num = int(input("Guess the number: "))
 
     if guess_num > rand_num:
@@ -26,7 +26,7 @@ guess_num = -1
 game_over = False
 attempts = 0
 
-while not(game_over):
+while not (game_over):
     attempts += 1
     guess_num = int(input("Guess the number: "))
 
@@ -46,7 +46,7 @@ guess_num = -1
 game_over = False
 attempts = 0
 
-while not(game_over):
+while not (game_over):
     attempts += 1
     guess_num = int(input("Guess the number: "))
 
@@ -73,13 +73,13 @@ while (car_fuel > 0):
     fuel_consumption_derivation = 0.5 - npr.rand()
     car_fuel -= (avg_fuel_consumption + fuel_consumption_derivation)
 
-    print(f"drove {distance} km.")
-    print(f"Fuel remaining: {car_fuel} litres.")
-
     check_fuel = car_fuel
     if (check_fuel - (avg_fuel_consumption + fuel_consumption_derivation)) < 0:
         print("I need more gas")
         break
+
+print(f"drove {distance} km.")
+print(f"Fuel remaining: {car_fuel} litres.")
 
 # 3a
 for num in range(1, 11):
