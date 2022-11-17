@@ -7,7 +7,7 @@ class Vector:
         self.args = args
 
     def __repr__(self):
-        return f"Vector({self.args})"
+        return f"Vector{self.args}"
 
     def __add__(self, other):
         v = [arg1 + arg2 for arg1, arg2 in zip(self.args, other.args)]
