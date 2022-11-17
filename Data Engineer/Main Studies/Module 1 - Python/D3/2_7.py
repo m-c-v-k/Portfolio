@@ -71,17 +71,15 @@ distance = 0
 while (car_fuel > 0):
     distance += 10
     fuel_consumption_derivation = 0.5 - npr.rand()
-
-    check_fuel = car_fuel
-    if (check_fuel - (avg_fuel_consumption + fuel_consumption_derivation)) < 0:
-        print(f"drove {distance} km.")
-        print(f"Fuel remaining: {car_fuel} litres. I need more gas")
-        break
-
     car_fuel -= (avg_fuel_consumption + fuel_consumption_derivation)
 
     print(f"drove {distance} km.")
     print(f"Fuel remaining: {car_fuel} litres.")
+
+    check_fuel = car_fuel
+    if (check_fuel - (avg_fuel_consumption + fuel_consumption_derivation)) < 0:
+        print("I need more gas")
+        break
 
 # 3a
 for num in range(1, 11):
