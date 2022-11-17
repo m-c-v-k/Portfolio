@@ -1,5 +1,5 @@
 #! Python3
-"""
+
 # 1a
 salaries = [30596, 31234, 54521, 34456, 52135, 30456, 40566]
 sum = 0
@@ -85,7 +85,7 @@ while True:
             print("You still have chores to do:")
             for item in to_do:
                 print(item)
-"""
+
 # 3a
 car = {
     "brand": "Volvo",
