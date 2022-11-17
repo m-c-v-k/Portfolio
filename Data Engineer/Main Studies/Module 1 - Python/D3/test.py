@@ -1,3 +1,6 @@
+#! Python3
+
+# Importing necessary libraries
 from numpy import random as npr
 
 car_fuel = 60
