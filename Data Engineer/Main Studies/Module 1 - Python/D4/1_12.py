@@ -1,5 +1,6 @@
 #! Python3
 
+# 1.12 - File I/O
 f = open("Data Engineer\\Main Studies\\Module 1 - Python\\D4\\test.txt")
 lines = f.readlines()
 f.close()

@@ -25,4 +25,5 @@ berith.set_sibling(arne)
 berith.set_sibling(carl)
 arne.set_sibling(berith)
 
+print(arne)
 print(berith.get_sibling())
