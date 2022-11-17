@@ -91,6 +91,6 @@ for num in range(15, 68, 7):
 
 # 3c
 val_1 = int(input("Select start value: "))
-val_2 = int(input("Select end value"))
-for num in range(val_1, val_2):
+val_2 = int(input("Select end value: "))
+for num in range(val_1, val_2 + 1):
     print(num)
