@@ -1,7 +1,7 @@
 #! Python3
 
 # Importing necessary libraries
-import numpy.random as npr
+from numpy import random as npr
 
 # 1a
 rand_num = 1 + npr.randint(20)
