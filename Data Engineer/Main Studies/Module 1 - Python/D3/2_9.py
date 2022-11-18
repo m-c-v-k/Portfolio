@@ -21,7 +21,7 @@ def get_user_initials():
 
 
 def split_name(name):
-    name = " ".split(usr_inp)
+    name = name.split()
     first_name = name[0]
     last_name = name[1]
 
@@ -34,7 +34,7 @@ get_user_initials()
 
 
 def get_user_initials():
-    usr_inp = input("Please enter your name: ")
+    usr_inp = input("Please enter your name: ").title()
     first_name, last_name = split_name(usr_inp)
     initials = f"{first_name[0]}.{last_name[0]}."
     print(initials)
@@ -141,7 +141,7 @@ reverser([1, 2, 3])
 
 
 def reverser(inp_list):
-    """ Sorts a list in ascending
+    """ Sorts a list in descending
 
     Args:
         inp_list (list): List containing the values to be sorted.
