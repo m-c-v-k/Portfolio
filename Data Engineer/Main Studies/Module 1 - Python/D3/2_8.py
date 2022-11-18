@@ -2,49 +2,52 @@
 
 # 1a
 salaries = [30596, 31234, 54521, 34456, 52135, 30456, 40566]
-sum = 0
+summ = 0
 
 for salary in salaries:
-    sum += salary
+    summ += salary
 
-print(f"Total salary payout: {sum} kr")
+print(f"Total salary payout: {summ} kr")
 
 # 1b
 salaries = [30596, 31234, 54521, 34456, 52135, 30456, 40566]
-sum = 0
+summ = 0
 highest_salary = 0
 
 for salary in salaries:
-    sum += salary
+    summ += salary
     highest_salary = salary
 
-print(f"Total salary payout: {sum} kr")
+print(f"Total salary payout: {summ} kr")
 
 # 1c
 salaries = [30596, 31234, 54521, 34456, 52135, 30456, 40566]
-sum = 0
+summ = 0
 highest_salary = 0
 
 for salary in salaries:
-    sum += salary
+    summ += salary
 
     if salary > highest_salary:
         highest_salary = salary
 
-print(f"Total salary payout: {sum} kr")
+print(f"Total salary payout: {summ} kr")
+
+print(f"Highest salary: {max(salaries)}")
+print(f"Total salary payout: {sum(salaries)}")
 
 # 1d
 salaries = [30596, 31234, 54521, 34456, 52135, 30456, 40566]
-sum = 0
+summ = 0
 highest_salary = 0
 
 for salary in salaries:
-    sum += salary
+    summ += salary
 
     if salary > highest_salary:
         highest_salary = salary
 
-print(f"Total salary payout: {sum} kr")
+print(f"Total salary payout: {summ} kr")
 print(f"The highest salary is: {highest_salary} kr")
 
 # 2a
