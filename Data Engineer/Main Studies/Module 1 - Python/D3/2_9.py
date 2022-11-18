@@ -141,6 +141,13 @@ reverser([1, 2, 3])
 
 
 def reverser(inp_list):
+    """ Sorts a list in ascending
+
+    Args:
+        inp_list (list): List containing the values to be sorted.
+    """
+
+    # List length
     n = len(inp_list)
 
     # Optimizing the code, if no change is needed it won't have to do everything.
@@ -153,13 +160,14 @@ def reverser(inp_list):
         for j in range(n-i-1):
 
             # If j is bigger than the next item, swap place
-            if inp_list[j] > inp_list[j + 1]:
+            if inp_list[j] < inp_list[j + 1]:
                 swapped = True
                 inp_list[j], inp_list[j + 1] = inp_list[j + 1], inp_list[j]
 
         # If there is no need for any swaps by now, there won't be any swaps
         # Exit loop
         if not swapped:
+            # Break function
             return
 
 
