@@ -49,6 +49,8 @@ for salary in salaries:
 
 print(f"Total salary payout: {summ} kr")
 print(f"The highest salary is: {highest_salary} kr")
+print(f"Highest salary: {max(salaries)}")
+print(f"Total salary payout: {sum(salaries)}")
 
 # 2a
 to_do = ["eat", "study", "cook", "clean", "play"]
