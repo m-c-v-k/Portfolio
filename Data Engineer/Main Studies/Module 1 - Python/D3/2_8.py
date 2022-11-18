@@ -81,7 +81,7 @@ while True:
             break
         else:
             print(f"Please do the following: {to_do[0]}")
-            to_do.pop()
+            to_do.pop(0)
     elif ask == "no":
         if len(to_do) == 0:
             print("You have completed all tasks!")
