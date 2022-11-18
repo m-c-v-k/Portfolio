@@ -175,7 +175,8 @@ print(
     f'Weather temperature: {temp_celcius} Celsius')
 
 # 5
-words = ["lucky", "trove", "track", "glare", "guest", "dream"]
+words = ["lucky", "trove", "track", "glare",
+         "guest", "dream", "kamikaze", "ok", "test"]
 
 while True:
 
