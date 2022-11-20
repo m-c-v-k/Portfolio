@@ -13,7 +13,6 @@ mcbShelf = shelve.open('mcb')
 
 #  Save clipboard content.
 if len(sys.argv) == 3 and sys.argv[1].lower() == 'save':
-    # [ctrl+c]  ['save']    ['key']
     mcbShelf[sys.argv[2]] = pyperclip.paste()
 elif len(sys.argv) == 2:
 
