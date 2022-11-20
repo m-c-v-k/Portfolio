@@ -1,6 +1,7 @@
 #! Python3
 p_list = list()
-with open("Data Engineer\\Main Studies\\Module 1 - Python\\D5\\phonelist.txt", "r") as file:
+f = open(f"Data Engineer\\Main Studies\\Module 1 - Python\\D5\\phonelist.txt", "r")
+with open() as file:
     for line in file:
         p_list.append(line)
         print(line)
@@ -15,7 +16,7 @@ class Person:
         self.__phone = phone
 
     def __repr__(self):
-        return f"Name:\t{self.__name}\nPhone:\t{self.__phone}"
+        return f"Name: {self.__name}\nPhone: {self.__phone}"
 
 
 # print(file)
