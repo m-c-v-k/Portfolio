@@ -1,13 +1,19 @@
 #! Python3
 p_list = list()
 f = open(f"Data Engineer\\Main Studies\\Module 1 - Python\\D5\\phonelist.txt", "r")
-with open() as file:
-    for line in file:
-        p_list.append(line)
-        print(line)
-file.close()
+content = f.read()
+f.close()
 
-print(p_list)
+
+# Handle file content
+content = content[1:]
+content = content[:-1]
+
+if ", " in content:
+    split_content = content.split(", ")
+
+    for item in split_content:
+        p_list.append(item)
 
 
 class Person:
@@ -16,10 +22,10 @@ class Person:
         self.__phone = phone
 
     def __repr__(self):
-        return f"Name: {self.__name}\nPhone: {self.__phone}"
+        return f"Name:\t{self.__name}\tPhone:\t{self.__phone}\n"
 
 
-# print(file)
+print(p_list)
 
 
 while True:
@@ -44,6 +50,6 @@ while True:
     elif command == "SAVE":
         f = open(
             "Data Engineer\\Main Studies\\Module 1 - Python\\D5\\phonelist.txt", "w+")
-        print(str(p_list))
+
         f.write(str(p_list))
         f.close()
