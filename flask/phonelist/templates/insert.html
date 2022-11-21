@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <a href="/">main</a>
+    <ul>
+      {% for item in list %}
+      <li>{{item[0]}}: {{item[1]}}</li>
+      {% endfor %}
+    </ul>
+
+    <form action="/insert" method="GET">
+      <label for="name">Insert:</label><br />
+      <input type="text" id="name" name="name" placeholder="John" /><br />
+      <input type="text" id="phone" name="phone" placeholder="07xx-xxxxxxx" />
+      <input type="submit" value="Insert" />
+    </form>
+  </body>
+</html>
