@@ -17,12 +17,14 @@ def start():
 
 @app.route("/delete", methods=["GET", "POST"])
 def delete():
+    list_items(conn)
     return render_template('delete.html', list=phone_list)
 
 
 @app.route("/insert", methods=["GET", "POST"])
 def insert():
     insert(conn)
+    list_items(conn)
     return render_template('insert.html', list=phone_list)
 
 
@@ -64,10 +66,8 @@ def list_items(conn):
 
 
 def insert(conn):
-    name = request.form.get('name')
-    print(name)
-    phone = request.form.get('phone')
-    print(phone)
+    name = request.args.get('name')
+    phone = request.args.get('phone')
     command = f"""INSERT INTO phonelist (name, phone)
 VALUES ('{name}', '{phone}');"""
     print(f"{name} Added")
