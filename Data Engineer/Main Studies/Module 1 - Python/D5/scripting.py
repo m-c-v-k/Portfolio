@@ -14,9 +14,9 @@ print(os.listdir('C:\\'))
 path = 'C:\\Users\\mcvk\\Documents\\'
 for item in os.listdir('C:\\Users\\mcvk\\Documents\\'):
     if os.path.isdir(path + item):
-        print(f"{item}:\tDirectory")
+        print(f"{item:30}:\tDirectory")
     elif os.path.isfile(path + item):
-        print(f"{item}:\tFile\t{os.stat(path + item).st_size}")
+        print(f"{item:30}:\tFile\t{os.stat(path + item).st_size}")
 
 # 1d
 path = 'C:\\Users\\mcvk\\Documents\\'
