@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Checkpoint 1</title>
+  </head>
+  <body>
+    <h1>Checkpoint database</h1>
+    <p>{{date[0]}}-{{date[1]}}-{{date[2]}}:</p>
+    <ul>
+      {% for item in list %}
+      <li>{{item[0]}}: {{item[1]}}</li>
+      {% endfor %}
+    </ul>
+
+    <form action="/delete" method="POST">
+      <label for="name">Delete:</label><br />
+      <input type="text" id="del_name" name="del_name" placeholder="Caesar" />
+      <input type="submit" value="Delete" />
+    </form>
+    <br />
+    <form action="/insert" method="POST">
+      <label for="name">Insert:</label><br />
+      <input
+        type="text"
+        id="inp_name"
+        name="inp_name"
+        placeholder="Caesar"
+      /><br />
+      <input
+        type="text"
+        id="inp_phone"
+        name="inp_phone"
+        placeholder="077-1212321"
+      />
+      <input type="submit" value="Insert" />
+    </form>
+    <br />
+    <form action="/api_search" method="POST">
+      <label for="name">Search API</label><br />
+      <input
+        type="text"
+        id="api_search"
+        name="api_search"
+        placeholder="Name or Number"
+      />
+      <input type="submit" value="Search" />
+    </form>
+  </body>
+</html>

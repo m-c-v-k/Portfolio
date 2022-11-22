@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>API doc</title>
+    <style>
+      code {
+        font-size: 130%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>{{action}} - API doc</h1>
+    <p>
+      Usage:
+      <code
+        >/api?action=<i>action</i>&amp;<i>param<sub>1</sub>=</i
+        ><i>arg<sub>1</sub></i
+        >&amp;<i>param<sub>2</sub>=</i><i>arg<sub>2</sub></i></code
+      >...
+    </p>
+    <ul>
+      <li>
+        Action <code>phone</code>, for example:
+        <a href="/api?action=phone&name=Urban"
+          ><code>/api?action=phone&amp;name=Urban</code></a
+        >
+        gives the phone number of Urban
+      </li>
+      <li>
+        Action <code>name</code>, for example:
+        <a href="/api?action=name&phone=0435-4355438"
+          ><code>/api?action=name&amp;phone=0435-4355438</code></a
+        >
+        gives the name of the person whose number is 0435-4355438
+      </li>
+    </ul>
+  </body>
+</html>
