@@ -30,10 +30,12 @@ def read_phonelist():
         list: List of all entries in the database.
     """
 
+    conn = connect_db()
     cur = conn.cursor()
     cur.execute("SELECT * FROM phonelist;")
     rows = cur.fetchall()
     cur.close()
+    conn.close()
 
     return rows
 
@@ -48,11 +50,13 @@ def read_phone(name):
         list: List containing the number associated with the entered name.
     """
 
+    conn = connect_db()
     cur = conn.cursor()
     print(f"SELECT phone FROM phonelist WHERE name = '{name}';")
     cur.execute(f"SELECT phone FROM phonelist WHERE name = '{name}';")
     rows = cur.fetchall()
     cur.close()
+    conn.close()
 
     return rows
 
@@ -67,11 +71,13 @@ def read_name(phone):
         list: List containing the name associated with the entered number.
     """
 
+    conn = connect_db()
     cur = conn.cursor()
     print(f"SELECT name FROM phonelist WHERE phone = '{phone}';")
     cur.execute(f"SELECT name FROM phonelist WHERE phone = '{phone}';")
     rows = cur.fetchall()
     cur.close()
+    conn.close()
 
     return rows
 
@@ -86,10 +92,13 @@ def add_phone(name, phone):
     Returns:
         string: String containing the name of the person added in the database.
     """
+
+    conn = connect_db()
     cur = conn.cursor()
     cur.execute(f"INSERT INTO phonelist VALUES ('{name}', '{phone}');")
     cur.execute("COMMIT;")
     cur.close()
+    conn.close()
 
     return name
 
@@ -103,10 +112,13 @@ def delete_phone(name):
     Returns:
         string: String containing the name of the person to be deleted from the database.
     """
+
+    conn = connect_db()
     cur = conn.cursor()
     cur.execute(f"DELETE FROM phonelist WHERE name = '{name}';")
     cur.execute("COMMIT;")
     cur.close()
+    conn.close()
 
     return name
 
@@ -127,7 +139,6 @@ def get_date():
     return today
 
 
-conn = connect_db()
 app = Flask(__name__)
 
 # Paths and their associated functions.
