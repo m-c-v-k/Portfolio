@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Simple List</title>
+  </head>
+  <body>
+    <h1>Phonelist database</h1>
+    <p>Today's date: {{date[0]}}-{{date[1]}}-{{date[2]}}:</p>
+    <p>Records currently in database:</p>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Phone</th>
+      </tr>
+      {% for item in list %}
+      <tr>
+        <td>{{item[0]}}</td>
+        <td>{{item[1]}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    <p></p>
+    <!-- <form action="/delete"> -->
+    <form action="/delete" method="post">
+      <label for="name">Delete:</label><br />
+      <input type="text" id="name" name="name" placeholder="David" />
+      <input type="submit" value="Delete" />
+    </form>
+    <p></p>
+    <!-- <form action="/insert"> -->
+    <form action="/insert" method="post">
+      <label for="name">Insert:</label><br />
+      <input type="text" id="name" name="name" placeholder="Per" /><br />
+      <input type="text" id="phone" name="phone" placeholder="0760-112233" />
+      <input type="submit" value="Insert" />
+    </form>
+  </body>
+</html>

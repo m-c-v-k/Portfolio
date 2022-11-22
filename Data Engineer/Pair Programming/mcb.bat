@@ -1,1 +1,1 @@
-@py.exe C:\Users\mcvk\Documents\programmering\Portfolio\Data Engineer\Pair Programming\mcb.pyw %*
+@C:\\Python39\\python.exe C:\\Users\\mcvk\\Documents\\programmering\\Portfolio\\Data Engineer\\Pair Programming\\mcb.pyw %*
