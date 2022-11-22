@@ -214,7 +214,7 @@ def api_func():
         if len(phone) < 1:
             return f"not found {name}"
         return phone[0][0]
-    if action == 'name':
+    elif action == 'name':
         phone = args.get('phone', default="No number", type=str)
         if phone == "No number":
             return render_template('api_usage.html', action=action)
@@ -256,7 +256,7 @@ def api_search():
             if len(phone) < 1:
                 return render_template('api_search.html', value="Name not found")
             return render_template('api_search.html', value=phone[0][0])
-        if action == 'name':
+        elif action == 'name':
             phone = inp
             if phone == "No number":
                 return render_template('api_search.html', value="No number")
