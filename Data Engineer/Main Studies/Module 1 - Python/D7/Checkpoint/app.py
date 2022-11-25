@@ -221,7 +221,7 @@ def api_func():
         name = read_name(phone)
         if len(name) < 1:
             return f"not found {phone}"
-        return phone
+        return name[0][0]
     else:
         return f"Unknown action: '{action}'"
 
@@ -241,29 +241,35 @@ def api_search():
 
         inp = request.form['api_search']
 
-        if inp.isalnum():
+        inp_digit_test = inp.replace('-', '')
+
+        if inp_digit_test.isdigit():
             action = 'phone'
         else:
             action = 'name'
 
         if action == "Bad action":
             return render_template('api_search.html', value="Bad inp")
-        if action == 'phone':
+
+        if action == 'name':
             name = inp
             if name == "No name":
                 return render_template('api_search.html', value="No name")
             phone = read_phone(name)
             if len(phone) < 1:
                 return render_template('api_search.html', value="Name not found")
+
             return render_template('api_search.html', value=phone[0][0])
-        elif action == 'name':
+
+        elif action == 'phone':
             phone = inp
             if phone == "No number":
                 return render_template('api_search.html', value="No number")
             name = read_name(phone)
-            if len(name) <= 1:
+            if len(name) < 1:
                 return render_template('api_search.html', value="Number not found")
 
             return render_template('api_search.html', value=name[0][0])
+
         else:
             return f"Unknown action: '{action}'"
