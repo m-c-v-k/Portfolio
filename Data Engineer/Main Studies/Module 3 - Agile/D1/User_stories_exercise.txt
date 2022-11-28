@@ -1,0 +1,44 @@
+Excercise 1:
+
+-- User story 1:
+- Jag vill ha ett larm som går att larma av och på.
+# Användare
+# Ha ett fungerande larm
+# Säkerhet
+Task 1:
+Skapa pinkod
+Task 2:
+Larmstatus text
+Task 3:
+Olika användare
+Task 4:
+Larmet ska kunna känna av olika saker.
+Task 5: 
+Överfalls larm.
+
+
+-- User story 2:
+- Jag vill kunna se vem som har kommit in och ut.
+# Användare/Ägare
+# Log
+# Kontroll / översikt
+Task 1:
+Skriva larmstatus till fil.
+Task 2: 
+Kunna komma åt loggen remote.
+Task 3: I/O
+
+
+-- User story 3:
+- Jag vill att larmet ska kunna larma larmcentral.
+# Användare/Ägare
+# Larma externt
+# Extra säkerhet, snabbare åtgärd
+Task 1:
+Kommunikationsfunktion.
+Task 2:
+Återkalla larmet.
+Task 3:
+Detaljerad information.
+Task 4: 
+Överfalls larm.
