@@ -1,0 +1,15 @@
+Story 1
+M, A,  B, J, Annika
+3, 89, ?, 2, 2
+1, 5, 2, 3, 1
+
+Slutnummer: 3
+
+Story 2:
+Slutnummer: 2
+
+Story 3:
+Slutnummer: 3
+
+Story 4:
+Slutnummer: 
