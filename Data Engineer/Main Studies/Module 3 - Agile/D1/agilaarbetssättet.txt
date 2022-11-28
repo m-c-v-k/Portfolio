@@ -1,0 +1,20 @@
+Agilaarbetssättet:
+
+Viktigaste principerna:
+- 7: Fungerande programvara
+- 4: Verksamhetskunniga och utvecklare måste arbeta tillsammans dagligen under hela projektet
+
+Fördelar:
+- Finns större utrymme för förändringar
+- Bättre slutresultat med möjlighet till att hitta rätt för kunden
+- Team-orienterat
+- Mindre initial planering
+- Bättre kommunikation
+- Mer flexibel kod
+- Kan sälja mer
+- Säljer förtjänst för kunden
+
+
+Nackdelar:
+- Den slutliga prisbilden kan vara lite oklar
+- Många olika åsikter kan dra åt olika håll
