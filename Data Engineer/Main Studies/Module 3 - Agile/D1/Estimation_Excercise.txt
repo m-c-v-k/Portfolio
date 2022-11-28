@@ -12,4 +12,4 @@ Story 3:
 Slutnummer: 3
 
 Story 4:
-Slutnummer: 
+Slutnummer: 3

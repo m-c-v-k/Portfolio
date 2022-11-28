@@ -1,0 +1,8 @@
+Agile - User story:
+- As a <who>
+- I want <what>
+- So that <why>
+
+Break down user stories into tasks.
+
+Estimation of story points.
