@@ -1,0 +1,16 @@
+Vattenfalls metoden:
+
+Fördelar:
+- Alltid tydlig kvravspec - Vet alltid vad som ska levereras
+- Har en tydligt organiserad struktur
+- Kan tidigt upptäcka problem
+- Det som levereras är testat och kvallitetssäkrat
+- Tydligare dokumentering
+
+
+Nackdelar: 
+- Ökad risk för uppskjutna problem
+- Risk med vinstmarginalen
+- Kan bidra till ökad press och stress
+- Inflexibel, kan inte ta förändringar till projektet
+- Överflödig dokumentation
