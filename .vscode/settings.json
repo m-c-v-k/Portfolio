@@ -19,6 +19,16 @@
       "database": "excercise_week4",
       "username": "postgres",
       "password": "MisoDaisy"
+    },
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "predb1",
+      "database": "predb1",
+      "username": "postgres",
+      "password": "MisoDaisy"
     }
   ]
 }
