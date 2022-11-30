@@ -52,8 +52,8 @@ LIMIT 10;
 SELECT c.name, COUNT(DISTINCT ar.article_id) AS distinc_articles
 FROM customer c
 JOIN article_reads ar ON c.id = ar.customer_id
-JOIN paper_subscription pr ON ar.customer_id = pr.customer_id
-WHERE pr.status = 'Inactive'
+LEFT JOIN paper_subscription pr ON ar.customer_id = pr.customer_id
+WHERE pr.status IS NULL
 GROUP BY c.name
 HAVING COUNT(DISTINCT ar.article_id) > 200;
 
