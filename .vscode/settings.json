@@ -29,6 +29,16 @@
       "database": "predb1",
       "username": "postgres",
       "password": "MisoDaisy"
+    },
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "dvdrental",
+      "database": "dvdrental",
+      "username": "postgres",
+      "password": "MisoDaisy"
     }
   ]
 }
