@@ -88,14 +88,44 @@ FULL JOIN inventory ON film.film_id = inventory.inventory_id;
 --15. Why is it the same number of rows when performing full join as doing right join
 --from inventory on films?
 
+-- Because you join all entries from the right which is more than on the left.
+
 
 --16. List the first rental date of each customer id
+SELECT customer_id, MIN(rental_date)
+FROM rental
+GROUP BY customer_id
+ORDER BY customer_id;
 
 
 --17. Use Lateral Join to list the first rental date, and the next rental date of each
 --customer id. I.e. the first and second time each customer performed a rental.
 
+SELECT cu.customer_id, sub.rental_date
+FROM customer cu
+JOIN lateral (
+    SELECT customer_id, rental_date
+    FROM rental
+    WHERE customer_id = cu.customer_id
+    LIMIT 2
+) sub 
+ON sub.customer_id = cu.customer_id
+ORDER BY cu.customer_id;
+
+SELECT r.customer_id, sub.rental_date
+FROM rental r
+JOIN lateral (
+    SELECT customer_id, rental_date
+    FROM rental
+    WHERE customer_id = r.customer_id
+    LIMIT 2
+) sub 
+ON sub.customer_id = r.customer_id
+ORDER BY r.customer_id;
 
 --(Difficult)
 --18. List all films and their category, who has category with name longer than 8
 --characters.
+SELECT f.title, c.name
+FROM film f
+JOIN 
