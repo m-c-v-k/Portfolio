@@ -112,17 +112,6 @@ JOIN lateral (
 ON sub.customer_id = cu.customer_id
 ORDER BY cu.customer_id;
 
-SELECT r.customer_id, sub.rental_date
-FROM rental r
-JOIN lateral (
-    SELECT r2.customer_id, r2.rental_date
-    FROM rental r2
-    WHERE r2.customer_id = r.customer_id
-    LIMIT 2
-) sub 
-ON sub.customer_id = r.customer_id
-ORDER BY r.customer_id;
-
 --(Difficult)
 --18. List all films and their category, who has category with name longer than 8
 --characters.
