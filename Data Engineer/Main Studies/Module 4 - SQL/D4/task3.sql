@@ -104,41 +104,58 @@ GROUP BY staff_id;
 
 --13. List all payments where the payment amount is greater than the average amount
 --of each staff member
-SELECT staff_id, amount
-FROM payment
-WHERE amount > (
-    SELECT staff_id, AVG(amount)
-    FROM payment
+SELECT p.staff_id, p.amount
+FROM payment p
+WHERE p.amount > (
+    SELECT AVG(p2.amount)
+    FROM payment p2
+    WHERE p.staff_id = p2.staff_id
 )
-ORDER BY staff_id;
-
-SELECT staff_id, amount
-FROM payment
-WHERE amount > (
-    SELECT AVG(amount)
-    FROM payment
-    WHERE staff_id = staff_id
-)
-ORDER BY staff_id;
+ORDER BY p.staff_id;
 
 --Pattern matching
 --14. List the actors firstname and lastname where first name that starts with 'E'.
+SELECT first_name, last_name
+FROM actor
+WHERE first_name LIKE 'E%';
 
 --15. List the actors where the first name contains an 'E'
+SELECT first_name, last_name
+FROM actor
+WHERE first_name LIKE '%e%'
+OR first_name LIKE '%E%';
 
 --16. List all films and the actors of the film where the film is in some way about a
-
 --crocodile.
+SELECT f.title, a.first_name, a.last_name
+FROM film f
+JOIN film_actor fa ON f.film_id = fa.film_id
+JOIN actor a ON a.actor_id = fa.actor_id
+WHERE f.description LIKE '%crocodile%'
+OR f.description LIKE '%Crocodile%';
 
 --Null value tests
-
 --17. List the staff who don't have a picture
+SELECT first_name, last_name
+FROM staff
+WHERE picture IS NOT NULL;
 
 --18. List all rentals that are not returned.
+SELECT *
+FROM rental
+WHERE return_date IS NULL;
 
 --Logical operators
-
 --19. List the customers whose first name or last name is 'Kim'
+SELECT first_name, last_name
+FROM customer
+WHERE first_name = 'Kim'
+OR last_name = 'Kim';
 
 --20. List all films where the category is either 'Action' or 'Drama'
-
+SELECT f.title, c.name
+FROM film f
+JOIN film_category fc ON fc.film_id = f. film_id
+JOIN category c ON c.category_id = fc.category_id
+WHERE c.name = 'Action'
+OR c.name = 'Drama';
