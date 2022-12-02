@@ -55,7 +55,7 @@ CREATE TABLE public.member
     f_name character varying(50),
     l_name character varying(50),
     address character varying(200),
-    area_code integer,
+    area_code integer, -- VARCHAR(20) Better
     city character varying(50),
     PRIMARY KEY (id)
 );
