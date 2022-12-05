@@ -249,6 +249,35 @@ bicycle_shop=# SELECT * FROM bicycle;
   4 |  4899 | f    |   121382342
 (7 rows)
 
+bicycle_shop=# UPDATE bicycle
+bicycle_shop-# SET id = 5
+bicycle_shop-# WHERE serial_nmyu = 121373328;
+UPDATE 1
+bicycle_shop=#
+bicycle_shop=# UPDATE bicycle
+bicycle_shop-# SET id = 6
+bicycle_shop-# WHERE serial_nmyu = 121374122;
+UPDATE 1
+bicycle_shop=# UPDATE bicycle
+bicycle_shop-# SET id = 7
+bicycle_shop-# WHERE serial_nmyu = 121375722;
+UPDATE 1
+bicycle_shop=# UPDATE bicycle
+bicycle_shop-# SET id = 8
+bicycle_shop-# WHERE serial_nmyu = 121382342;
+UPDATE 1
+bicycle_shop=# SELECT * FROM bicycle;
+ id | price | sold | serial_nmyu
+----+-------+------+-------------
+  2 |  4399 | t    |   121371827
+  3 |  4599 | f    |   121372152
+  4 |  4899 | f    |   121382231
+  5 |  4599 | f    |   121373328
+  6 |  4599 | f    |   121374122
+  7 |  3500 | f    |   121375722
+  8 |  4899 | f    |   121382342
+(7 rows)
+
 -- 11. Working with SQL script files
 -- 11.1 Use a file, say customers.sql, to build a table customers with the following content:
 -- personname varchar(50)
@@ -257,26 +286,87 @@ bicycle_shop=# SELECT * FROM bicycle;
 -- sold_date date
 -- payment int
 -- Use commands similar to the ones in createtable.sql!
+bicycle_shop=# create table if not exists customers (
+bicycle_shop(#   first_name VARCHAR(50),
+bicycle_shop(#   last_name VARCHAR(50),
+bicycle_shop(#   serial_num int,
+bicycle_shop(#   sold_date date,
+bicycle_shop(#   payment int
+bicycle_shop(# );
+CREATE TABLE
+
 -- 11.2 Insert the following values in table customers with an appropriate SQL command:
 -- Annette Lundh 121371827 2020-12-03
 -- Jesus MariaAlvarez 121373328 2021-03-19
 -- Nicolae Dumescu 121382231 2021-02-26
 -- Sverker Torkelsson 121374122 2021-04-01
+bicycle_shop=# insert into customers values
+bicycle_shop-#   ('Annette', 'Lundh', 121371827, '2020-12-03'),
+bicycle_shop-#   ('Jesus Maria', 'Alvarez', 121373328, '2021-03-19'),
+bicycle_shop-#   ('Nicole', 'Dumescu', 121382231, '2021-02-26'),
+bicycle_shop-#   ('Sverker', 'Torkelsson', 121374122, '2021-04-01');
+INSERT 0 4
+
 -- 11.3 Observe what bikes are sold and update the table bicycle so that the correct bike specimens
 -- are sold in that table. Use SQL command(s): either try to make one fancy SQL call, or if that
 -- fails manually update every incorrect entry in the table.
+  2 |  4399 | t    |   121371827 ok
+  3 |  4599 | f    |   121372152
+  3 |  4599 | f    |   121373328 fix
+  3 |  4599 | f    |   121374122 fix
+  3 |  3500 | f    |   121375722
+  4 |  4899 | f    |   121382231 fix
+  4 |  4899 | f    |   121382342
+
+bicycle_shop=# UPDATE bicycle
+bicycle_shop-# SET sold = 't'
+bicycle_shop-# WHERE serial_nmyu = 121373328
+bicycle_shop-# OR serial_nmyu = 121374122
+bicycle_shop-# OR serial_nmyu = 121382231;
+UPDATE 3
+bicycle_shop=# SELECT * FROM bicycle;
+ id | price | sold | serial_nmyu
+----+-------+------+-------------
+  2 |  4399 | t    |   121371827
+  3 |  4599 | f    |   121372152
+  7 |  3500 | f    |   121375722
+  8 |  4899 | f    |   121382342
+  4 |  4899 | t    |   121382231
+  5 |  4599 | t    |   121373328
+  6 |  4599 | t    |   121374122
+(7 rows)
+
 -- 11.4 We observe an overlap between the tables bicycle and customers – we'll remove the table
 -- bicycle and the table customers (not now but later!) then we'll create a new table
 -- bicycle_sales, that contain all columns of bicycle and customers with the exception of
 -- the column sold that competes with sold_date: if sold_date is NULL, the bicycle is not
 -- sold, if sold_date is a date, then the bicycle was sold that date.
 -- Add the appropriate CREATE TABLE command in file customers.sql!
+drop table if exists bicycle_sales;
+create table if not exists bicycle_sales (
+  id SERIAL PRIMARY KEY,
+  serial_num int,
+  price int,
+  sold_date date,
+  first_name VARCHAR(50),
+  last_name VARCHAR(50)
+);
+
 -- 11.5 Now we want to populate the table bicycle_sales with joined data from bicycle and
 -- customers. We note that bicycle.serial fairly equals customers.serial_num, so we try a
 -- manual join like this:
 -- SELECT * FROM bicycle, customers WHERE bicycle.serial_num = customers.serial_num;
 -- or shorter
 -- SELECT * FROM bicycle b, customers c WHERE b.serial_num = c.serial_num;
+bicycle_shop=# SELECT * FROM bicycle b, customers c WHERE b.serial_nmyu = c.serial_num;
+ id | price | sold | serial_nmyu | first_name  | last_name  | serial_num | sold_date  | payment
+----+-------+------+-------------+-------------+------------+------------+------------+---------
+  2 |  4399 | t    |   121371827 | Annette     | Lundh      |  121371827 | 2020-12-03 |
+  5 |  4599 | t    |   121373328 | Jesus Maria | Alvarez    |  121373328 | 2021-03-19 |
+  6 |  4599 | t    |   121374122 | Sverker     | Torkelsson |  121374122 | 2021-04-01 |
+(3 rows)
+
+
 -- 11.6 In the tabulation generated from that SELECT clause, we determine that if we use the columns
 -- personname, surname, serial_num, sold_date and price, it fits into the form of the new
 -- but empty file bicycle_sales. So now let's try the command:
@@ -287,3 +377,11 @@ bicycle_shop=# SELECT * FROM bicycle;
 -- INSERT INTO bicycle_sales
 -- SELECT personname, surname, c.serial_num, sold_date, price
 -- FROM bicycle b, customers c WHERE b.serial_num = c.serial_num;
+bicycle_shop=# SELECT first_name, last_name, c.serial_num, sold_date, price
+bicycle_shop-# FROM bicycle b, customers c WHERE b.serial_nmyu = c.serial_num;
+ first_name  | last_name  | serial_num | sold_date  | price
+-------------+------------+------------+------------+-------
+ Annette     | Lundh      |  121371827 | 2020-12-03 |  4399
+ Jesus Maria | Alvarez    |  121373328 | 2021-03-19 |  4599
+ Sverker     | Torkelsson |  121374122 | 2021-04-01 |  4599
+(3 rows)
