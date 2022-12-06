@@ -57,8 +57,8 @@ CREATE TABLE public.items
 (
     contact character varying(50) NOT NULL,
     contact_id integer NOT NULL,
-    contact_type_id integer NOT NULL,
-    contact_category_id integer NOT NULL,
+    contact_type_id integer,
+    contact_category_id integer,
     CONSTRAINT contact_id_fkey FOREIGN KEY (contact_id)
         REFERENCES public.contacts (id) MATCH SIMPLE
         ON UPDATE NO ACTION
