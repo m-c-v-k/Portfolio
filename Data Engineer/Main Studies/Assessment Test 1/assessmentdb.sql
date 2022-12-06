@@ -150,8 +150,8 @@ ALTER TABLE public.view_contacts
     OWNER TO postgres;
 
 -- List all information from the database
-SELECT c.id, c.first_name, c.last_name, c.title, c.organization, i.contact, i.contact_id, i.contact_type_id, i.contact_category_id, ct.id, ct.contact_type, cc.id, cc.contact_category
+SELECT *
 FROM contacts c
-    JOIN items i ON i.contact_id = c.id
-    JOIN contact_types ct ON ct.id = i.contact_type_id
-    JOIN contact_categories cc ON cc.id = i.contact_category_id;
+    FULL JOIN items i ON i.contact_id = c.id
+    FULL JOIN contact_types ct ON ct.id = i.contact_type_id
+    FULL JOIN contact_categories cc ON cc.id = i.contact_category_id;
