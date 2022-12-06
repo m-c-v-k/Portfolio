@@ -90,3 +90,14 @@ ALTER ROLE
 
 postgres=> CREATE DATABASE hmmm;
 CREATE DATABASE
+
+You are now connected to database "dvdrental" as user "postgres".
+dvdrental=# GRANT SELECT
+dvdrental-# ON film
+dvdrental-# TO sara;
+GRANT
+
+dvdrental=> DELETE FROM film
+dvdrental-> WHERE title = 'Chamber Italian';
+FEL:  rättighet saknas för tabell film
+
