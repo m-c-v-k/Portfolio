@@ -1,0 +1,838 @@
+51.0, 487-YNB, PaleGreen, 0800
+48.0, 382 PLS, LightSkyBlue, 0801
+50.0, YDT4892, Magenta, 0801
+50.0, XC-5781, MidnightBlue, 0801
+51.0, 9-K3877, Turquoise, 0802
+46.5, BZ8 0160, Snow, 0802
+46.5, 5HX1393, LawnGreen, 0802
+49.5, ZR 7115, Teal, 0803
+49.5, DJR-418, MediumSeaGreen, 0804
+46.0, 894 GZT, Red, 0804
+50.0, 965934, GhostWhite, 0804
+46.0, MFB 947, CornflowerBlue, 0805
+47.0, 220186, Violet, 0806
+48.5, 339QZ, PeachPuff, 0807
+49.0, 7IO 515, DarkOrange, 0807
+48.5, SUK-330, LightPink, 0807
+51.0, 256 WHL, Chocolate, 0808
+49.0, ZE-3098, Cornsilk, 0808
+46.5, 1399, DarkOrchid, 0808
+51.5, CLD 090, GoldenRod, 0810
+50.5, LWD 730, Beige, 0810
+50.0, 413 NTD, Cornsilk, 0811
+47.0, J20 8LN, SeaGreen, 0812
+46.5, 634 TDW, MintCream, 0812
+51.0, PSF 302, DodgerBlue, 0812
+47.5, 9QID 72, Aquamarine, 0812
+51.0, V45-NSQ, Orange, 0812
+51.5, 80IE7, Cyan, 0813
+49.0, 8XB4237, MidnightBlue, 0814
+49.0, 99J VL2, Magenta, 0814
+50.0, 109-XNU, GoldenRod, 0816
+50.0, KFH-3769, PapayaWhip, 0816
+50.0, MWS6027, Coral, 0818
+48.5, WF7 8789, AliceBlue, 0819
+47.0, PKJ7063, DarkBlue, 0819
+51.5, 6EA 650, HotPink, 0820
+48.5, 08WY913, DarkOrchid, 0820
+47.5, 44U G21, Sienna, 0821
+51.0, UCA 471, LightCyan, 0821
+51.0, UQU5124, Azure, 0822
+50.0, 485 BGV, Moccasin, 0822
+48.5, 097-765, WhiteSmoke, 0822
+51.5, KGM 940, DarkSlateGray, 0823
+51.0, IKK 515, Blue, 0824
+49.5, 945 IFE, Orchid, 0824
+51.0, EJD-7304, Fuchsia, 0824
+49.0, XCJ 654, PapayaWhip, 0825
+51.0, DRP P55, DarkRed, 0825
+49.5, 604-DWP, MediumSeaGreen, 0826
+51.0, VEF-9611, DarkBlue, 0826
+47.5, X 306016, Tomato, 0826
+46.0, OPZ 936, DarkBlue, 0827
+49.0, 263 HIS, MintCream, 0827
+50.0, 873 CWA, DarkOrchid, 0828
+46.5, MIG-0392, DarkKhaki, 0828
+46.5, O 658219, SlateBlue, 0830
+51.5, SM 6875, SpringGreen, 0830
+50.5, UVG-8930, MediumSpringGreen, 0831
+51.0, XKK0824, DeepSkyBlue, 0831
+51.5, 7SJ W11, Tomato, 0831
+51.0, 040 CHE, RosyBrown, 0832
+48.5, 2FZ7586, Wheat, 0832
+51.5, 891-BSCV, Pink, 0834
+47.5, 3-48967, Orange, 0834
+50.0, 00S H24, Tan, 0835
+47.5, 451-744, PaleTurquoise, 0836
+46.5, 223-ZMB, LightSlateGray, 0836
+47.5, KBB 762, SlateGray, 0836
+47.0, 25W C60, SeaGreen, 0837
+49.0, 720-OBD, BlanchedAlmond, 0837
+51.0, 25T 185, GoldenRod, 0838
+47.0, 710-ZYY, SeaGreen, 0839
+48.0, 19U KU4, DarkSalmon, 0839
+49.5, 183-ZJX, Blue, 0839
+47.0, OLY 375, Crimson, 0840
+51.0, 089 BPI, IndianRed, 0840
+51.0, 8C 6Y8UYQ, Linen, 0842
+47.5, 611 ENS, PapayaWhip, 0843
+49.5, 207-DNY, Plum, 0844
+50.0, 0N754, Cyan, 0844
+48.0, 505 CD5, Fuchsia, 0846
+46.5, 19HL230, GreenYellow, 0846
+50.5, 10VX4, NavajoWhite, 0846
+47.5, ATH 227, DarkOliveGreen, 0847
+49.5, 203-LWI, MistyRose, 0848
+47.5, 4PJ8529, Cyan, 0849
+48.5, RSJ F62, DarkSalmon, 0849
+50.5, 3K QH245, PeachPuff, 0849
+51.0, 90BE6, Crimson, 0849
+51.5, CEN-4862, Peru, 0850
+49.5, 375 ULC, Wheat, 0850
+46.5, 6MNA573, Navy, 0850
+48.5, PCF 141, DeepSkyBlue, 0851
+49.5, OMF-6623, SaddleBrown, 0851
+47.5, 7QEL 17, GreenYellow, 0851
+49.0, AWO 970, IndianRed, 0852
+48.5, 489 DYU, DeepSkyBlue, 0852
+47.5, WYP 173, YellowGreen, 0853
+46.0, 4-0140M, AliceBlue, 0853
+51.0, MQ 96714, MidnightBlue, 0853
+50.5, 910YVG, Cornsilk, 0854
+46.5, JR5 1832, CornflowerBlue, 0855
+49.5, 48-2983J, White, 0855
+51.0, NUR M44, Red, 0855
+47.0, 211 SUE, Olive, 0856
+51.5, SO4 E5R, Sienna, 0856
+46.5, 785-NGP, Snow, 0858
+47.5, BOJ 270, IndianRed, 0858
+49.0, 5760, Violet, 0858
+49.5, 605-VCV, BlueViolet, 0858
+50.5, 432 TAI, LightSlateGray, 0859
+49.0, MDN 756, FloralWhite, 0859
+46.5, 6NU2728, Maroon, 0859
+46.0, 756 6GF, SlateGray, 0859
+47.4, 373-XHZ, BurlyWood, 0900
+48.4, 125-BHU, Chartreuse, 0900
+48.4, 394-UVF, DarkCyan, 0900
+47.6, QYJ5670, Tomato, 0900
+48.2, 6UR97, SlateGray, 0900
+48.6, WP 35400, CadetBlue, 0900
+47.8, HLA 402, Coral, 0900
+47.2, VHT 683, SaddleBrown, 0901
+48.8, MKT 191, MediumAquaMarine, 0901
+46.6, 5408 RO, Brown, 0901
+46.8, MLC 385, Gold, 0901
+47.2, I 448647, MediumTurquoise, 0901
+48.0, 810-HBJ, Salmon, 0902
+48.4, XOB-6777, DarkOrchid, 0902
+48.4, 263-CHD, Purple, 0903
+48.4, 60C NR2, LightBlue, 0903
+47.0, HEI-556, DarkMagenta, 0904
+47.6, JTR-347, Thistle, 0904
+48.4, 44O R30, DarkOrchid, 0904
+48.8, 26Z WD3, IndianRed, 0905
+48.2, 886XVA, BurlyWood, 0905
+48.4, M19 5UI, Khaki, 0905
+48.4, 843W3, Coral, 0905
+48.4, JVK 357, LightSlateGray, 0905
+48.4, 0FE 885, Moccasin, 0905
+46.6, 2UA 622, Teal, 0905
+47.6, EYG-793, LavenderBlush, 0905
+47.0, EHY 659, DarkSeaGreen, 0906
+47.0, PDT-0895, SlateGray, 0906
+48.0, 03J•827, SkyBlue, 0906
+47.4, 429 KWC, PaleGoldenRod, 0907
+48.6, GKZ4603, Blue, 0907
+47.8, 573 XXH, LightGoldenRodYellow, 0907
+47.6, 4VF 059, Yellow, 0907
+48.4, 5XUE070, Bisque, 0907
+46.8, 3B 5105A, Peru, 0908
+48.8, GON2542, MediumPurple, 0908
+48.2, ZXN 606, LightGray, 0908
+47.0, RZX-709, DarkRed, 0908
+48.4, 2-08298M, DarkViolet, 0908
+47.8, 302-KHF, FloralWhite, 0909
+47.2, 197-CNT, DeepPink, 0909
+48.2, 56T BI0, Blue, 0909
+48.4, CLJ-2738, MintCream, 0909
+47.6, HXY 654, Snow, 0910
+48.4, AJQ 487, BlanchedAlmond, 0910
+48.8, 89-84076, DarkOrchid, 0910
+48.4, LP4 B0A, LightCyan, 0910
+46.8, 9V438, Tomato, 0910
+48.2, 1MIG 95, LemonChiffon, 0911
+47.8, 5VX R22, MediumPurple, 0911
+48.6, 925-ASB, MistyRose, 0911
+47.2, UJK 769, Plum, 0911
+47.6, ZAZ 290, Red, 0912
+48.4, 749 3KA, CornflowerBlue, 0912
+48.0, NIF-8212, DarkOliveGreen, 0912
+47.6, 664-UZRT, Magenta, 0913
+47.4, 448ANY, Violet, 0913
+47.2, KKG-6208, DeepSkyBlue, 0913
+47.6, 96WZ5, SandyBrown, 0913
+48.8, RNU9305, Wheat, 0913
+46.6, HVG 570, LightBlue, 0913
+47.0, 261 9HI, RosyBrown, 0913
+47.2, 7X 8132W, Purple, 0913
+47.0, 446-NUM, MintCream, 0913
+48.2, 07K CJ0, LightCoral, 0914
+48.2, Y 666609, SeaGreen, 0914
+47.4, 945 SE0, Orchid, 0914
+47.2, Q95-EBC, MistyRose, 0914
+48.4, 1CG8705, Bisque, 0914
+47.4, 462 MEY, DarkViolet, 0914
+48.6, JQ2 B2F, SkyBlue, 0914
+47.0, UWY0808, Orange, 0915
+47.2, LLZ 911, ForestGreen, 0916
+47.8, GZ4 5448, SaddleBrown, 0916
+46.8, YOR 209, Fuchsia, 0916
+48.0, Q51 3BY, SaddleBrown, 0917
+47.0, 82H ZO5, DarkSlateBlue, 0917
+47.4, Y18-RBR, MediumSpringGreen, 0917
+48.0, 1YC6959, RoyalBlue, 0917
+47.4, 5MQ1250, Gainsboro, 0918
+48.4, EAK 930, PaleVioletRed, 0918
+47.6, B60 9WJ, FloralWhite, 0919
+47.4, 075 CN9, LightCyan, 0919
+48.6, 976J2, Black, 0919
+47.6, 43Z•615, DarkGray, 0919
+48.6, A26 9LA, Aquamarine, 0919
+47.0, 8771 OZ, CadetBlue, 0920
+47.0, MZZ-408, DarkGray, 0920
+47.2, 702-KLD, Tomato, 0920
+48.4, ZJB-0652, DarkViolet, 0920
+48.8, HFY 239, MediumPurple, 0920
+46.8, 7603, LawnGreen, 0921
+48.0, J35 3KF, DodgerBlue, 0921
+48.8, 59-2690O, DodgerBlue, 0921
+46.6, 6AV 220, Bisque, 0922
+46.8, 0019 QA, DarkViolet, 0922
+47.6, VZM 066, MediumSeaGreen, 0922
+48.6, 838-HEL, PaleGoldenRod, 0923
+48.8, ENS-516, PowderBlue, 0923
+48.8, 63P 6376, CornflowerBlue, 0923
+47.4, IQ 58099, Sienna, 0923
+47.0, 9I 5618B, BurlyWood, 0923
+48.4, WM 0666, DarkKhaki, 0923
+47.6, 225-OTO, Sienna, 0924
+47.6, 9-48155F, DarkTurquoise, 0924
+47.2, LYP-8034, Fuchsia, 0924
+47.0, 4SK 604, Plum, 0925
+47.8, VNI6352, DarkSeaGreen, 0925
+48.6, 069 TLF, Orchid, 0925
+47.0, 116 8822, DeepSkyBlue, 0926
+47.8, 3F 08275, LightSlateGray, 0926
+47.4, 164-ZKV, DimGray, 0926
+48.6, 8UQK 26, Linen, 0926
+47.6, 6M 7846L, PaleTurquoise, 0926
+46.8, VE-2099, Tomato, 0926
+48.4, WYU W39, Thistle, 0927
+46.8, 926 IWX, DarkBlue, 0927
+48.6, ADL7517, NavajoWhite, 0927
+47.0, 7WI 328, Crimson, 0927
+48.0, 286 FAU, HoneyDew, 0928
+46.6, 64-W092, Orange, 0928
+47.0, ZOS 061, PaleGreen, 0928
+47.4, 7HQ0791, LightGreen, 0928
+47.8, 742-PRUM, Khaki, 0928
+47.0, 927 LFJ, CornflowerBlue, 0929
+48.4, 681-PMS, LightGray, 0930
+46.8, 251-HDJ, DarkSlateGray, 0930
+46.6, 29BV8, Gray, 0930
+47.0, 8BM9717, MediumTurquoise, 0931
+47.6, 3DVA 37, Magenta, 0931
+48.8, 758HA, MediumSpringGreen, 0931
+46.6, 149635, Olive, 0932
+48.4, 3-4375E, LightSkyBlue, 0932
+46.6, 165-TEY, SteelBlue, 0932
+46.6, H56-UWL, LightSeaGreen, 0932
+48.2, 417 MY4, DarkOrchid, 0933
+48.2, 32-EL57, Khaki, 0933
+46.6, 787 VMM, Indigo, 0933
+48.2, 847M3, Maroon, 0934
+48.0, VAC 756, Khaki, 0934
+48.6, 9-B0614, Green, 0934
+48.2, 1KF 250, Lavender, 0934
+48.6, 021 AMR, Green, 0934
+47.2, 089-XOG, PapayaWhip, 0934
+47.0, 366-RFH, Sienna, 0935
+48.0, 6NG0940, MediumTurquoise, 0935
+47.4, LKV7298, DarkGoldenRod, 0935
+47.6, DW 14029, DarkSlateBlue, 0935
+46.8, 5GS V36, Teal, 0936
+46.6, 718-DRDW, RosyBrown, 0936
+48.4, F26-ORK, LightCyan, 0936
+46.6, 5CS Q37, LightBlue, 0937
+47.6, 6PY 070, PaleGreen, 0937
+48.6, 7-3634Y, Silver, 0937
+48.4, E57-HOJ, DeepPink, 0937
+47.0, VCG 481, Chocolate, 0938
+46.8, KBK 927, Orange, 0938
+48.6, 673G2, OrangeRed, 0938
+48.2, 583ZZY, MediumOrchid, 0938
+47.0, LQR 996, DeepPink, 0938
+47.4, W93 9TP, Purple, 0938
+48.2, HPT5830, Brown, 0938
+47.4, 9EHO318, Peru, 0938
+47.4, U57 3JV, DodgerBlue, 0939
+46.6, 767 RLW, MediumAquaMarine, 0939
+47.6, 123 1267, Yellow, 0939
+47.0, 0L 06316, PaleVioletRed, 0940
+47.8, 287 GUA, Magenta, 0940
+47.6, 1RR C97, Aquamarine, 0940
+47.4, 9N 54103, Black, 0940
+47.8, 7QL E41, RosyBrown, 0941
+48.4, 685HM, Khaki, 0941
+47.6, 2IC B59, SlateBlue, 0941
+48.2, 560-QPN, DarkOrange, 0941
+48.4, 2-T2016, LightBlue, 0941
+47.6, UII6154, Navy, 0942
+47.0, 88Z UG0, MediumSlateBlue, 0942
+48.2, 704 RAF, MediumPurple, 0942
+48.4, LDT8614, DarkKhaki, 0942
+47.6, CSE 708, Ivory, 0942
+46.8, 3DR 236, Green, 0943
+48.0, 75W X24, MediumVioletRed, 0943
+47.6, GGO-5248, AliceBlue, 0943
+47.6, 501-VKJ, Aquamarine, 0943
+48.8, ZDF 438, MediumTurquoise, 0943
+48.4, 88-CN61, Cyan, 0943
+48.0, 4OK F36, LightSlateGray, 0943
+48.4, AAU4155, LightSlateGray, 0944
+46.6, 824ZWH, Chartreuse, 0944
+46.8, 345-NIS, White, 0944
+48.2, OWD-652, Turquoise, 0945
+47.4, 760HWZ, LawnGreen, 0945
+48.8, 270-JDF, MistyRose, 0945
+48.2, NDQ 3744, PaleGreen, 0945
+48.2, 0-P2853, LightBlue, 0945
+48.2, HZJ 228, LightCoral, 0946
+47.0, 623 AFH, DarkSalmon, 0946
+47.6, 3VF 840, Salmon, 0946
+48.8, B 626863, OliveDrab, 0946
+46.6, QPD-218, Aqua, 0946
+46.8, 674-AXH, PaleVioletRed, 0947
+47.6, 4VM 129, LemonChiffon, 0947
+48.8, GBY-0817, LightBlue, 0947
+48.8, 29-WY84, Aquamarine, 0947
+47.2, 55E 548, LightCoral, 0947
+48.2, APZ3965, Sienna, 0948
+47.2, 455 OEP, Olive, 0948
+46.8, SMW 849, LavenderBlush, 0949
+47.4, MNG 482, Teal, 0949
+47.0, ZTQ8875, LightGoldenRodYellow, 0949
+47.8, 7-J8034, Salmon, 0950
+48.2, CAG 914, AliceBlue, 0950
+48.4, 2F T5940, Azure, 0950
+47.6, 367 TFJ, MistyRose, 0951
+47.0, 610 CS2, Aquamarine, 0951
+48.4, 45R 363, MediumAquaMarine, 0951
+47.6, LZF 729, Tan, 0951
+46.8, 3-00690S, DarkSlateBlue, 0951
+48.4, 930-CNJK, MediumSlateBlue, 0952
+48.4, KVX4779, MediumPurple, 0952
+47.4, 172U, DarkMagenta, 0952
+46.8, 697 IRW, PeachPuff, 0953
+46.6, 6FT21, DarkOliveGreen, 0953
+48.6, LXP 416, LightGray, 0953
+48.4, 588ZD, Crimson, 0953
+48.6, 02BT166, SkyBlue, 0954
+47.2, 5216, Ivory, 0954
+46.8, 096GNA, DarkSeaGreen, 0954
+47.4, XWJ-668, Chartreuse, 0955
+48.0, 823-ORE, FloralWhite, 0955
+47.2, 974443, PaleGreen, 0955
+48.2, 0A810, LightSkyBlue, 0955
+47.8, YEY 821, MediumSeaGreen, 0956
+46.8, 2XK5911, Navy, 0956
+48.6, 7I 57788, DarkBlue, 0956
+47.8, 687-KOM, Pink, 0956
+46.8, CHE 685, DarkViolet, 0957
+47.8, EEB-691, CornflowerBlue, 0957
+48.8, ISJ 5769, MediumAquaMarine, 0957
+48.8, 853-VTO, SteelBlue, 0957
+48.2, XMZ5580, LightBlue, 0958
+47.0, 156 9CP, LemonChiffon, 0958
+48.8, 109 AQQ, MintCream, 0958
+48.4, 477 LFK, PeachPuff, 0958
+48.8, 3ZU7520, Silver, 0958
+47.4, VFM 4973, Bisque, 0958
+46.6, OTT2975, MediumOrchid, 0958
+48.2, 2-S8663, NavajoWhite, 0958
+47.6, 4JH G38, Navy, 0958
+48.4, 95H•925, LemonChiffon, 0959
+47.6, YI 8289, DarkOrange, 0959
+48.6, 29-PG59, LightBlue, 0959
+46.7, ZCR7346, LightPink, 1009
+47.9, 500 GLN, GoldenRod, 1012
+49.4, T 287148, LightSlateGray, 1030
+47.3, PNK 601, Chocolate, 1034
+48.5, 4FY9874, PapayaWhip, 1036
+46.7, 111-LHV, Tan, 1043
+48.8, 591 VSQ, LavenderBlush, 1059
+49.7, 419 BZD, OrangeRed, 1101
+46.7, EYS9834, LightYellow, 1123
+48.5, HFS 322, Khaki, 1128
+49.7, PZ4 2943, Cyan, 1138
+46.2, VNF3905, WhiteSmoke, 1201
+48.2, 24PV1, LightSeaGreen, 1201
+47.0, 30X 239, AliceBlue, 1210
+49.0, 27-8085E, Indigo, 1211
+48.2, 5FO73, LightSalmon, 1213
+46.6, 315W7, LightPink, 1216
+50.2, 434 RS8, OrangeRed, 1221
+47.8, 918-FMD, DarkSlateGray, 1223
+49.0, 483-OEN, Fuchsia, 1225
+48.2, CIO-5680, MediumTurquoise, 1230
+50.6, 828-XXM, DeepPink, 1231
+49.0, BJT 789, PapayaWhip, 1231
+49.0, 3O 61186, DarkRed, 1233
+49.4, 203-VOXU, Lavender, 1235
+48.2, 6D 6183T, Violet, 1235
+46.6, G 713182, GoldenRod, 1236
+48.6, SQU-9696, LightGray, 1238
+46.6, 790Z5, MediumTurquoise, 1241
+47.0, 30-37383, AntiqueWhite, 1241
+49.4, HO 7194, LightSteelBlue, 1242
+48.6, KXX 419, DarkRed, 1243
+48.2, LTT-1326, LawnGreen, 1245
+47.8, 852 PJE, DarkOrange, 1252
+48.6, 153 KKV, Green, 1252
+49.4, QWN 660, DarkTurquoise, 1258
+48.6, 42-C839, SlateGray, 1303
+47.4, 2ES 964, HotPink, 1303
+48.0, 862 FEO, Blue, 1312
+46.8, 151 YPS, DarkGreen, 1318
+47.0, HQB-0917, LightGoldenRodYellow, 1319
+47.0, SIW-8623, DarkRed, 1325
+48.4, 827S3, Aquamarine, 1327
+48.4, 2E WT299, Fuchsia, 1327
+46.6, 497-DID, LightGoldenRodYellow, 1330
+47.2, 1NB 270, MediumTurquoise, 1332
+47.6, 6IU6043, HotPink, 1332
+47.4, 923837, MediumAquaMarine, 1333
+46.8, 69YI882, MediumPurple, 1334
+48.6, 634-SUR, DarkGray, 1335
+47.8, 43-U441, NavajoWhite, 1337
+46.6, OA 6704, Teal, 1339
+48.0, Y79-98N, GoldenRod, 1342
+47.2, HAI 164, Gray, 1344
+46.6, PIQ-629, SpringGreen, 1345
+48.2, 035F, LightGoldenRodYellow, 1346
+48.2, WDV0645, GoldenRod, 1346
+46.8, 2NY1357, Red, 1347
+48.8, KVL 666, Moccasin, 1350
+47.4, 8DC 721, Aquamarine, 1354
+48.6, WMU 7361, PeachPuff, 1357
+48.8, 2VJT448, DarkRed, 1357
+47.3, VVK-020, DarkGoldenRod, 1416
+47.2, 3YKO 35, SandyBrown, 1425
+47.5, RF7 6010, DarkMagenta, 1450
+47.9, 4XG8184, DarkGoldenRod, 1456
+48.6, RTJ X03, DarkOliveGreen, 1500
+47.6, 7F227, LightGoldenRodYellow, 1501
+47.2, FOW 908, OldLace, 1513
+48.0, 163 DDJ, LightCyan, 1519
+46.6, 7MH 988, NavajoWhite, 1526
+48.8, LNU 096, Lavender, 1530
+48.6, 774LQK, MediumTurquoise, 1542
+46.6, 223Y, SandyBrown, 1548
+47.0, 5794 UA, LightBlue, 1557
+47.6, 823 DOX, Orange, 1600
+48.2, TKR-2076, SeaGreen, 1600
+51.2, 03-L931, SlateGray, 1601
+50.6, 886 9VC, LightSeaGreen, 1601
+50.6, 6C 08750, Gray, 1602
+51.8, 67J YY8, LightSkyBlue, 1603
+52.4, 666-BCL, Lavender, 1603
+47.6, 064PMR, SlateBlue, 1603
+46.4, MVN 699, LimeGreen, 1604
+48.8, R92-LJN, MediumTurquoise, 1605
+45.8, NOO4135, Lavender, 1605
+49.4, 2AT K27, CornflowerBlue, 1606
+50.0, FT-0320, Turquoise, 1606
+49.4, 624N6, Purple, 1607
+47.6, 721 RBF, DarkOrange, 1607
+51.2, X44-JXZ, OrangeRed, 1607
+46.4, SIK7104, Indigo, 1607
+50.0, 48U•361, Peru, 1608
+45.8, 504 BZC, Magenta, 1608
+51.8, 0ABT292, SeaShell, 1610
+47.0, CSE 082, DarkKhaki, 1610
+51.8, WCT-131, SlateBlue, 1610
+50.6, 1-C7782, Yellow, 1611
+48.8, ELX N82, Cyan, 1611
+47.6, QBX-8316, Navy, 1612
+52.4, KRW 9864, LawnGreen, 1613
+51.8, 129-654, MidnightBlue, 1613
+50.0, 243-LAAA, DarkSlateGray, 1613
+52.4, LDP 724, LightGoldenRodYellow, 1613
+45.8, BFV5531, SteelBlue, 1615
+51.8, EUI-5319, LemonChiffon, 1616
+46.4, 146 ZM8, MintCream, 1617
+52.4, UKH6068, LightPink, 1618
+52.4, HIB 415, PapayaWhip, 1618
+47.0, 4YV3245, Violet, 1619
+45.8, D39 9FP, Cornsilk, 1619
+51.8, 0-40092J, MediumPurple, 1620
+50.0, KMH 983, BlanchedAlmond, 1620
+46.4, R78 7YG, MediumSeaGreen, 1620
+51.8, 0LD 652, Silver, 1621
+47.6, 6X 9V0XUZ, Gold, 1621
+51.2, 62X PN2, Pink, 1623
+47.0, 3OX X41, DimGray, 1623
+51.8, 042-124, Fuchsia, 1623
+51.2, IQU 658, Peru, 1624
+48.8, ODI-954, LightCoral, 1624
+51.2, 9JM 807, Thistle, 1624
+50.6, 600-GNIX, PapayaWhip, 1625
+46.4, CZI-007, Orange, 1625
+48.2, LRP-878, Sienna, 1625
+47.6, 9FZ 095, HoneyDew, 1626
+50.6, 129 NCH, SaddleBrown, 1626
+52.4, EPK-7274, SlateGray, 1626
+51.8, 3WQX 05, Teal, 1628
+50.0, MR9 1428, DarkSlateGray, 1628
+50.0, CK 3007, SeaShell, 1628
+48.2, SQB-279, DarkSlateBlue, 1629
+52.4, 414-527, NavajoWhite, 1630
+51.2, 914 KDD, Linen, 1630
+52.4, 0LF 766, HotPink, 1630
+52.4, 647676, DarkViolet, 1630
+52.4, ZGY 634, Cornsilk, 1631
+51.8, OKL4753, DodgerBlue, 1632
+48.8, 253 7218, Red, 1632
+49.4, KFC 524, MintCream, 1633
+48.2, 16WD5, MediumOrchid, 1634
+46.4, 342 KYA, FloralWhite, 1634
+52.4, FPH-184, DarkMagenta, 1636
+52.4, 677MXC, DarkTurquoise, 1636
+48.2, EBD2169, DarkGray, 1636
+51.8, 134CSS, PaleGreen, 1637
+47.0, KQO 452, PaleGreen, 1637
+49.4, FF1 3857, DarkGoldenRod, 1638
+47.0, 4QN7025, ForestGreen, 1639
+52.4, HHC-2761, MistyRose, 1639
+50.0, 3-15233, Maroon, 1640
+49.4, 97PK8, LightPink, 1641
+47.6, ATV 924, Gray, 1641
+47.0, 721-RWDJ, BurlyWood, 1641
+49.4, 88Q•998, OldLace, 1641
+52.4, 95-3572K, Turquoise, 1642
+47.6, 7XA 201, Azure, 1643
+47.0, YDB5431, BurlyWood, 1643
+52.4, 2-5689H, NavajoWhite, 1643
+51.8, 60-9390G, RosyBrown, 1644
+45.8, ANE-3192, MediumAquaMarine, 1644
+46.4, 4-47586, SlateGray, 1644
+45.8, 8ZI4785, PaleGoldenRod, 1645
+48.2, 4KM03, SeaGreen, 1645
+48.2, 4-66227, Gold, 1645
+45.8, ZTG 148, Tan, 1645
+46.4, HSF 717, LightBlue, 1646
+50.6, 1-F0801, DarkGray, 1646
+47.0, 3EE S55, DarkGreen, 1646
+47.0, MP-2598, GreenYellow, 1646
+52.4, 99H Y79, LightSlateGray, 1647
+49.4, EN-1322, LightGreen, 1648
+48.2, 527ZV, MediumSlateBlue, 1648
+50.6, 600 DYC, Gold, 1649
+47.6, 5NHZ 69, DarkRed, 1649
+50.0, 9CP7436, Chocolate, 1649
+50.6, 1KF 847, AntiqueWhite, 1650
+46.4, U28-95F, SaddleBrown, 1651
+51.2, CZM 474, Black, 1651
+51.8, AZ1 O2Z, Lime, 1651
+47.0, 2JT7709, MediumOrchid, 1652
+47.6, NZA 429, DimGray, 1653
+51.8, 782-NYQ, PeachPuff, 1653
+51.8, 5EWR 92, DarkBlue, 1654
+50.0, 313730, OldLace, 1654
+46.4, 9IL4780, Magenta, 1655
+47.0, 70-NH89, Orchid, 1655
+47.6, 395-ZZK, LightYellow, 1656
+47.0, HFX 431, MidnightBlue, 1657
+49.4, MEJ-4926, Black, 1658
+48.2, 6CF61, Crimson, 1658
+51.2, 381S3, MediumBlue, 1658
+49.4, 912-ORW, DimGray, 1659
+52.4, 99-90743, WhiteSmoke, 1659
+49.4, 0PCA932, Snow, 1659
+49.4, 3-84991, DeepPink, 1659
+50.6, 095 RZZ, Magenta, 1700
+45.8, 409 ZHS, PaleVioletRed, 1700
+47.6, 451 CK4, DeepPink, 1700
+52.4, 096 BX0, Plum, 1701
+48.8, 2N 9S7OJA, WhiteSmoke, 1701
+50.6, 012-UYA, OrangeRed, 1701
+48.8, 381-TFX, Black, 1702
+45.8, 260 MMJ, MediumAquaMarine, 1702
+48.8, NQG-8593, BlanchedAlmond, 1702
+52.4, 80-3572P, Gray, 1703
+45.8, 1B G4554, DarkTurquoise, 1703
+48.8, LSX 640, Olive, 1703
+45.8, 726 YSZ, Indigo, 1703
+49.4, 6-28795Y, Brown, 1703
+45.8, T38 6QH, SlateBlue, 1703
+49.4, 8S XC122, LimeGreen, 1704
+46.4, 5129, Wheat, 1704
+46.4, Z86-40F, Moccasin, 1704
+50.6, BQG7946, Chocolate, 1704
+46.4, 3-94351, LightGreen, 1705
+47.6, LJB-415, LightSkyBlue, 1705
+48.8, MKH 333, OldLace, 1706
+47.6, R25 6IV, Bisque, 1706
+47.6, VBR-614, Green, 1707
+47.6, 186 JXC, MidnightBlue, 1707
+52.4, KEZ 144, ForestGreen, 1707
+49.4, JHR-931, Silver, 1707
+52.4, MLN 451, DarkSlateGray, 1707
+48.8, 582 1767, MediumAquaMarine, 1707
+52.4, 40J PE6, Coral, 1708
+51.2, 921 1634, DarkMagenta, 1708
+47.0, USJ 809, BurlyWood, 1708
+51.2, XN3 Q3L, DodgerBlue, 1709
+50.0, UDD 892, LightYellow, 1709
+50.0, 362 PQ9, GhostWhite, 1710
+51.2, 0FYV 52, DarkKhaki, 1710
+47.0, 181 KTH, Silver, 1710
+47.6, TWP 459, DarkGoldenRod, 1711
+46.4, 6B 48539, MediumSpringGreen, 1711
+45.8, XZ1 7201, Purple, 1712
+49.4, IYK4705, MediumBlue, 1712
+47.0, H55 6LX, Green, 1712
+48.8, 846 MUS, Beige, 1712
+48.2, 621 DKA, DarkSalmon, 1712
+50.0, 353VRJ, DarkBlue, 1713
+48.8, 6-5401H, Salmon, 1713
+45.8, 327UM, Aqua, 1713
+50.0, HAF 901, NavajoWhite, 1713
+50.6, 03-37449, Navy, 1714
+46.4, URK-7980, LemonChiffon, 1714
+47.6, 312 1XG, BlueViolet, 1714
+49.4, 19R 967, RoyalBlue, 1714
+49.4, AXT 858, HoneyDew, 1714
+52.4, 846 9TJ, Turquoise, 1714
+47.6, 0-79936, LightGray, 1714
+50.6, VJX-159, LightCyan, 1715
+49.4, QIO-7194, MediumBlue, 1715
+46.4, CWN 501, MediumPurple, 1716
+46.4, 9DR G00, Azure, 1716
+47.0, 807 XOD, LavenderBlush, 1716
+47.0, 436QJ, RosyBrown, 1716
+51.2, 999-JKA, LightYellow, 1717
+48.2, KWC E67, LightGray, 1717
+47.0, 3IT 287, SeaGreen, 1717
+46.4, PD1 2804, MistyRose, 1717
+50.6, 6LB5247, Brown, 1717
+51.8, 495 QJK, Crimson, 1718
+47.6, 7AZ 925, LightYellow, 1718
+47.0, IPA 723, MediumTurquoise, 1718
+46.4, 6D 9U0BMO, MediumOrchid, 1718
+51.2, 0743, Fuchsia, 1718
+48.8, 168 0412, Chartreuse, 1718
+52.4, 89IN415, SkyBlue, 1719
+47.6, 5KI 308, LavenderBlush, 1719
+48.2, 06-Q508, Green, 1719
+48.2, 308-XDR, Maroon, 1719
+51.8, ZWH 978, Snow, 1719
+47.0, 7-F4205, LightYellow, 1719
+48.2, KUI-3600, DarkGreen, 1720
+49.4, TKS2008, DodgerBlue, 1720
+47.0, 2EC 282, PaleTurquoise, 1720
+47.6, 590-ALJ, LavenderBlush, 1720
+47.0, 5AL Y51, NavajoWhite, 1720
+47.0, 35C N94, DeepPink, 1721
+46.4, 9Q F2815, DarkGray, 1721
+50.6, 74F LI7, GhostWhite, 1721
+50.6, NLD 524, Fuchsia, 1721
+47.6, 5OYC 54, MidnightBlue, 1721
+46.4, NGG 297, Pink, 1721
+50.0, 30ZS5, DarkSlateBlue, 1721
+52.4, 7691, CadetBlue, 1722
+46.4, 360-JTW, Khaki, 1722
+51.2, TP6 P6T, PaleGreen, 1722
+50.0, 5JFF189, RoyalBlue, 1722
+50.6, HSM 324, Azure, 1722
+50.0, 57Z•583, Magenta, 1722
+45.8, 072-435, Aquamarine, 1722
+51.8, 303TNX, Orange, 1723
+45.8, IXU9832, Orange, 1724
+48.8, 757-920, Orchid, 1724
+46.4, 42NL4, SpringGreen, 1725
+50.6, MW9 3732, SpringGreen, 1725
+48.2, 0-6384O, Peru, 1725
+50.6, JIF E34, DarkSeaGreen, 1726
+48.2, HLG 992, Chocolate, 1726
+47.0, EIS J42, Chocolate, 1726
+51.8, 164SL, MediumSeaGreen, 1726
+49.4, 418-TRQ, Chartreuse, 1727
+46.4, 5697, MediumAquaMarine, 1727
+47.6, 3SZ16, PeachPuff, 1727
+49.4, 4CS85, DeepPink, 1727
+45.8, 505 AEM, MediumSeaGreen, 1727
+51.8, SZS 681, DarkKhaki, 1727
+50.0, R35-86G, DarkTurquoise, 1728
+49.4, 536 CBU, DarkOrange, 1728
+49.4, 5-11243G, FloralWhite, 1728
+45.8, 3M N3084, PeachPuff, 1728
+50.6, 195-ZGQ, MediumSeaGreen, 1728
+45.8, QH 79390, DarkMagenta, 1728
+49.4, NU1 0155, DarkOrange, 1728
+51.8, J34-91D, DarkGray, 1728
+48.2, PEK 323, DarkSlateGray, 1729
+52.4, 778 WSB, LavenderBlush, 1729
+45.8, HGT 152, LightYellow, 1729
+51.2, OOG U74, Silver, 1729
+51.8, MZO 293, PaleGreen, 1729
+52.4, 6NI 229, Yellow, 1729
+46.4, DZH-959, LightSalmon, 1730
+50.0, 3JO6349, Maroon, 1730
+47.6, 5060, Beige, 1730
+50.0, 947-BBN, MediumPurple, 1730
+47.6, A16 4RM, Brown, 1731
+51.8, 1BBL 90, Violet, 1731
+52.4, DSY-8039, PaleVioletRed, 1731
+48.2, 212DD, LawnGreen, 1731
+48.2, 0P 8T8IMG, SlateBlue, 1731
+51.8, HEM-713, Khaki, 1731
+46.4, 2-6764D, GoldenRod, 1731
+51.2, BRW-6279, DarkSlateGray, 1732
+47.0, 779JMS, PeachPuff, 1732
+50.6, 8YU3148, SteelBlue, 1733
+45.8, 4K 3864X, LightSteelBlue, 1733
+52.4, 3KX K14, Lime, 1733
+52.4, MDH 682, Maroon, 1733
+48.2, 7N Z3485, OrangeRed, 1733
+50.6, 121-SPO, Violet, 1733
+49.4, 066I, Gray, 1733
+50.6, 9206, Peru, 1733
+46.4, 6NZ0479, Aquamarine, 1733
+52.4, 029832, MediumSeaGreen, 1733
+45.8, EQJ 731, LightGreen, 1733
+45.8, TG 3200, Red, 1734
+48.8, 806JX, SeaGreen, 1735
+50.0, 02Y UF0, Turquoise, 1735
+51.8, LC7 K8A, Lavender, 1735
+49.4, MB6 7723, DarkOliveGreen, 1735
+49.4, 386 QDQ, MediumBlue, 1735
+47.0, 905HX, LightSeaGreen, 1735
+50.0, 992170, Silver, 1735
+47.6, 208 IN2, DodgerBlue, 1736
+51.8, 3-X4989, CadetBlue, 1736
+47.0, 547HAS, LightSkyBlue, 1736
+51.8, 521QK, Purple, 1736
+49.4, DXD-225, PapayaWhip, 1737
+48.8, 5R I5480, Turquoise, 1737
+50.6, 196-VNV, Salmon, 1737
+46.4, XDX-726, GhostWhite, 1737
+49.4, 0-56442R, DarkBlue, 1737
+51.2, S59 3OR, Brown, 1737
+50.0, 8O XX628, Yellow, 1737
+45.8, XGJ8340, Thistle, 1737
+46.4, 46W X20, GoldenRod, 1738
+48.2, J74-00G, Pink, 1738
+48.8, 0-R2156, Lavender, 1738
+48.2, 6-8592I, DarkGoldenRod, 1738
+49.4, 0664 GV, MediumPurple, 1739
+47.0, MQW 399, Blue, 1739
+47.6, ZHG-422, RoyalBlue, 1739
+47.6, 6B 0C2HMM, LightSlateGray, 1739
+50.0, ZJU0934, SlateBlue, 1739
+46.4, 5DT V17, Moccasin, 1739
+49.4, 1T SB573, Magenta, 1739
+45.8, XDY 019, PowderBlue, 1740
+49.4, P 378687, DodgerBlue, 1740
+50.6, AQO 165, Fuchsia, 1740
+50.0, 579-SYT, GoldenRod, 1740
+49.4, 602-PVZ, LightCoral, 1740
+47.6, RJV 690, Snow, 1740
+47.0, 785-PJX, Silver, 1740
+51.2, C43-67U, MidnightBlue, 1740
+50.0, 27-U514, HoneyDew, 1740
+50.6, 4EV Q12, AntiqueWhite, 1740
+50.0, SXY-878, SkyBlue, 1740
+51.8, 654FA, PowderBlue, 1740
+51.2, 361WBB, Brown, 1740
+47.6, 1PT G40, ForestGreen, 1741
+47.6, T42-BCA, Purple, 1741
+50.6, 3-3380F, Chocolate, 1741
+48.2, 21-PK09, BurlyWood, 1741
+48.8, 4UHM074, DarkGreen, 1742
+52.4, ECL-583, White, 1742
+48.8, 938T8, Lime, 1742
+45.8, HFF 5114, PapayaWhip, 1743
+49.4, QIQ 215, Orchid, 1743
+50.6, F80 9BN, LightPink, 1743
+51.8, 53XS0, Chartreuse, 1743
+47.6, AHZ5114, LightCyan, 1743
+51.2, 016 3449, DarkOliveGreen, 1744
+48.8, RDL5450, Coral, 1744
+48.2, 5-40275J, Indigo, 1744
+52.4, 6C 58122, Lavender, 1745
+49.4, CJW-8605, IndianRed, 1745
+51.2, 993 7817, Gray, 1745
+49.4, 5TK 990, Peru, 1745
+51.2, 1-56653, DarkSeaGreen, 1745
+45.8, 843 MMW, HoneyDew, 1745
+52.4, 230-ZMG, MediumSlateBlue, 1745
+48.2, 9UC D89, Brown, 1745
+51.8, 57E F65, Lime, 1746
+49.4, 45-62727, DarkSlateGray, 1746
+47.0, 5-51025R, MediumOrchid, 1746
+48.2, 4GD59, BurlyWood, 1747
+52.4, WO-8930, SaddleBrown, 1747
+47.6, C39-HCG, Gray, 1747
+47.6, 440 LA5, Chocolate, 1747
+51.2, 1FN 682, SaddleBrown, 1748
+52.4, R05-VUK, Beige, 1748
+49.4, 038-OPW, Chartreuse, 1748
+48.8, 616D2, Silver, 1748
+47.6, 960 8SJ, BlanchedAlmond, 1748
+50.0, 927 2GF, RoyalBlue, 1748
+46.4, MAQ 087, SlateBlue, 1748
+50.0, 759-IUY, YellowGreen, 1748
+49.4, UDY 290, RosyBrown, 1748
+47.0, PIN-300, MediumOrchid, 1749
+51.8, 9PH T08, Green, 1749
+52.4, 532-488, Gainsboro, 1749
+51.2, 1-T4631, NavajoWhite, 1749
+46.4, EYZ 687, DarkKhaki, 1750
+51.8, NL5 6564, AntiqueWhite, 1750
+47.6, 5O 31506, PeachPuff, 1750
+51.2, 6S 36510, HoneyDew, 1750
+47.0, J41 3CG, DimGray, 1750
+46.4, 6S 5423W, Turquoise, 1751
+47.6, AYE-7910, Linen, 1751
+45.8, 43-X882, MediumSpringGreen, 1751
+52.4, 564 EFY, MediumVioletRed, 1751
+52.4, 29-PN73, LightGray, 1751
+47.6, 6-7057N, MediumSpringGreen, 1752
+45.8, BKP-5711, White, 1752
+48.2, 657UJT, DarkOliveGreen, 1752
+48.8, 6VO 806, Yellow, 1752
+48.8, 5UA 097, Tan, 1752
+52.4, 04N HV8, WhiteSmoke, 1753
+49.4, MTR 318, PaleGreen, 1753
+49.4, R55 0BI, RoyalBlue, 1753
+51.2, 2X890, PaleTurquoise, 1753
+51.8, PI 98342, LightBlue, 1753
+50.0, P 334539, MediumOrchid, 1755
+46.4, CZM 339, HoneyDew, 1755
+46.4, 4FP W91, DarkGray, 1755
+51.8, 43-00517, LightSteelBlue, 1755
+48.8, 385 PMI, Wheat, 1755
+48.8, 56D U51, White, 1756
+49.4, TP 9968, MediumVioletRed, 1757
+47.0, 221R, DeepSkyBlue, 1757
+47.6, 403856, MediumVioletRed, 1758
+50.0, DWX-8970, Green, 1758
+46.4, 669 ZNA, LemonChiffon, 1758
+47.6, CKN R43, Snow, 1759
+50.6, 299 4887, Moccasin, 1759
+48.2, XA-5572, White, 1759
+48.2, 727BC, LimeGreen, 1759
+49.4, Q91 3EF, SteelBlue, 1759
+46.4, 2W701, Tomato, 1759
