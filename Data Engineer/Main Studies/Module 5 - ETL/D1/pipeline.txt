@@ -1,0 +1,5 @@
+Få bort onödiga kolumner
+Få bort NULL-värden
+Få bort gammal data
+
+Separera data i olika table för enklare hantering
