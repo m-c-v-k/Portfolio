@@ -1,0 +1,10 @@
+,name,attendance,subject
+693,Norma Fisher,60,p.e
+696,Susan Wagner,60,p.e
+702,Susan Levy,60,p.e
+705,Jennifer Summers,60,p.e
+711,Tasha Rodriguez,60,p.e
+712,Michelle Kelley,60,p.e
+715,Janice Johnston,60,p.e
+716,Collin Lopez,60,p.e
+719,Sarah Villanueva,60,p.e

@@ -1,0 +1,12 @@
+,firstname,surname,attendance,subject
+32,Angela,Salazar,60,biology
+36,Susan,Wagner,60,biology
+43,Sean,Green,60,biology
+45,Jennifer,Summers,60,biology
+46,April,Snyder,60,biology
+52,Michelle,Kelley,46,biology
+55,Janice,Johnston,60,biology
+973,Walter,Pratt,60,biology
+977,Kimberly,Maynard,60,biology
+982,Peter,Mcdowell,60,biology
+989,Angela,Salazar,60,biology

@@ -1,0 +1,5 @@
+,firstname,surname,attendance,subject
+281,Bobby,Flores,60,biology
+282,Tasha,Rodriguez,60,biology
+294,Lauren,Hayes,60,biology
+299,Elizabeth,Woods,60,biology

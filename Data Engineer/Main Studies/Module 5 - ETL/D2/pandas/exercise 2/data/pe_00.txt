@@ -1,0 +1,16 @@
+,name,attendance,subject
+7,Stephanie Sutton,60,p.e
+13,April Snyder,60,p.e
+14,Dana Nguyen,60,p.e
+19,Michelle Kelley,60,p.e
+29,Stephanie Lawrence,60,p.e
+930,Stephanie Collins,60,p.e
+935,Kimberly Smith,44,p.e
+939,Cheryl Bradley,60,p.e
+940,Walter Pratt,0,p.e
+943,Michelle Kelley,60,p.e
+947,Collin Lopez,60,p.e
+951,Kimberly Myers,60,p.e
+953,Stephanie Lawrence,60,p.e
+956,Angela Salazar,60,p.e
+959,Elizabeth Woods,60,p.e

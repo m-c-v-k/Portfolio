@@ -1,0 +1,8 @@
+,name,attendance,subject
+782,Collin Lopez,60,p.e
+787,Desiree Cain,60,p.e
+789,Lauren Hayes,60,p.e
+792,Norma Fisher,60,p.e
+798,Stephanie Collins,60,p.e
+803,Kimberly Smith,60,p.e
+808,Walter Pratt,55,p.e

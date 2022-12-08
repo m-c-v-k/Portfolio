@@ -1,0 +1,8 @@
+,firstname,surname,attendance,subject
+96,Lauren,Hayes,60,biology
+103,Peter,Montgomery,60,biology
+104,Theodore,Mcgrath,60,biology
+110,Kimberly,Smith,60,biology
+111,Jennifer,Summers,60,biology
+113,Dana,Nguyen,60,biology
+119,Kimberly,Maynard,60,biology

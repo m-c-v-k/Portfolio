@@ -1,0 +1,11 @@
+,firstname,surname,attendance,subject
+240,Susan,Levy,60,biology
+241,Sean,Green,60,biology
+249,Tasha,Rodriguez,60,biology
+251,Kimberly,Maynard,60,biology
+252,Laurie,Wallace,60,biology
+253,Janice,Johnston,60,biology
+255,Mary,Alvarez,60,biology
+256,Peter,Mcdowell,60,biology
+257,Sarah,Villanueva,60,biology
+267,Susan,Wagner,60,biology

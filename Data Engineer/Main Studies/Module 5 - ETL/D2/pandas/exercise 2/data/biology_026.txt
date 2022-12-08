@@ -1,0 +1,5 @@
+,firstname,surname,attendance,subject
+794,Elizabeth,Woods,60,biology
+795,Susan,Wagner,0,biology
+797,Theodore,Mcgrath,60,biology
+804,Jennifer,Summers,60,biology

@@ -1,0 +1,10 @@
+,name,attendance,subject
+34,Jorge Sullivan,60,p.e
+42,Susan Levy,60,p.e
+57,Mary Alvarez,0,p.e
+58,Peter Mcdowell,60,p.e
+971,Dana Nguyen,60,p.e
+972,Cheryl Bradley,60,p.e
+976,Michelle Kelley,0,p.e
+984,Kimberly Myers,60,p.e
+987,Lauren Hayes,60,p.e

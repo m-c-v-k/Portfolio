@@ -1,0 +1,8 @@
+,firstname,surname,attendance,subject
+156,Mary,Alvarez,0,biology
+158,Sarah,Villanueva,60,biology
+163,Whitney,Stark,60,biology
+171,Stephanie,Collins,60,biology
+174,Susan,Levy,60,biology
+177,Jennifer,Summers,60,biology
+179,Dana,Nguyen,59,biology

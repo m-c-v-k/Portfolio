@@ -1,0 +1,11 @@
+,firstname,surname,attendance,subject
+872,Dana,Nguyen,60,biology
+876,Tasha,Rodriguez,60,biology
+883,Peter,Mcdowell,60,biology
+885,Kimberly,Myers,60,biology
+891,Norma,Fisher,60,biology
+892,Jorge,Sullivan,60,biology
+893,Elizabeth,Woods,60,biology
+894,Susan,Wagner,60,biology
+897,Stephanie,Collins,60,biology
+898,Stephanie,Sutton,60,biology

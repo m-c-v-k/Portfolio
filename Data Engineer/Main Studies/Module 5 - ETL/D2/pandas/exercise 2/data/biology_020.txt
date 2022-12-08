@@ -1,0 +1,11 @@
+,firstname,surname,attendance,subject
+604,Sean,Green,60,biology
+605,Kimberly,Smith,60,biology
+607,April,Snyder,60,biology
+610,Walter,Pratt,60,biology
+613,Michelle,Kelley,60,biology
+617,Collin,Lopez,60,biology
+620,Sarah,Villanueva,60,biology
+622,Desiree,Cain,60,biology
+623,Stephanie,Lawrence,50,biology
+626,Angela,Salazar,60,biology

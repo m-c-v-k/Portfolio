@@ -1,0 +1,8 @@
+,name,attendance,subject
+150,Tasha Rodriguez,60,p.e
+155,Collin Lopez,60,p.e
+159,Kimberly Myers,60,p.e
+161,Stephanie Lawrence,60,p.e
+165,Norma Fisher,60,p.e
+168,Susan Wagner,60,p.e
+169,Peter Montgomery,60,p.e

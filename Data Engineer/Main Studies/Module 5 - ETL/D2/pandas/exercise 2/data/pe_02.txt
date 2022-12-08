@@ -1,0 +1,9 @@
+,name,attendance,subject
+66,Norma Fisher,60,p.e
+72,Stephanie Collins,60,p.e
+74,Brian Hamilton,60,p.e
+75,Susan Levy,60,p.e
+76,Sean Green,44,p.e
+78,Jennifer Summers,46,p.e
+85,Michelle Kelley,60,p.e
+88,Janice Johnston,60,p.e

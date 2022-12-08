@@ -1,0 +1,6 @@
+,firstname,surname,attendance,subject
+580,Michelle,Kelley,60,biology
+583,Janice,Johnston,60,biology
+588,Kimberly,Myers,60,biology
+591,Lauren,Hayes,60,biology
+597,Susan,Wagner,0,biology

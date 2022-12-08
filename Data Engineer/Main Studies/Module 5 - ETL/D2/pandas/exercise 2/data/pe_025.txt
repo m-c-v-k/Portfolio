@@ -1,0 +1,8 @@
+,name,attendance,subject
+756,Lauren Hayes,54,p.e
+765,Stephanie Collins,60,p.e
+770,Kimberly Smith,60,p.e
+771,Jennifer Summers,60,p.e
+773,Dana Nguyen,60,p.e
+777,Tasha Rodriguez,60,p.e
+778,Michelle Kelley,60,p.e

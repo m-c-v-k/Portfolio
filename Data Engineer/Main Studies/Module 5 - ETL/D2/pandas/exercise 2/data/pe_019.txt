@@ -1,0 +1,8 @@
+,name,attendance,subject
+570,Susan Levy,60,p.e
+574,April Snyder,60,p.e
+585,Mary Alvarez,60,p.e
+587,Sarah Villanueva,60,p.e
+589,Desiree Cain,60,p.e
+590,Stephanie Lawrence,60,p.e
+594,Norma Fisher,60,p.e

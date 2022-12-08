@@ -1,0 +1,8 @@
+,name,attendance,subject
+181,Walter Pratt,60,p.e
+186,Laurie Wallace,60,p.e
+190,Peter Mcdowell,60,p.e
+192,Kimberly Myers,60,p.e
+194,Stephanie Lawrence,60,p.e
+198,Norma Fisher,60,p.e
+205,Stephanie Sutton,60,p.e

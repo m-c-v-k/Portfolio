@@ -1,0 +1,7 @@
+,firstname,surname,attendance,subject
+456,Kimberly,Myers,60,biology
+457,Desiree,Cain,60,biology
+462,Norma,Fisher,60,biology
+469,Stephanie,Sutton,60,biology
+472,Sean,Green,60,biology
+478,Walter,Pratt,52,biology

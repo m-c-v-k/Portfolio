@@ -1,0 +1,10 @@
+,firstname,surname,attendance,subject
+4,Peter,Montgomery,60,biology
+5,Theodore,Mcgrath,60,biology
+8,Brian,Hamilton,60,biology
+9,Susan,Levy,60,biology
+10,Sean,Green,43,biology
+21,Laurie,Wallace,60,biology
+22,Janice,Johnston,60,biology
+27,Kimberly,Myers,60,biology
+948,Mary,Alvarez,60,biology

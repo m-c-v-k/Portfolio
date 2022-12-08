@@ -1,0 +1,7 @@
+,firstname,surname,attendance,subject
+127,Desiree,Cain,60,biology
+135,Susan,Wagner,60,biology
+139,Stephanie,Sutton,60,biology
+144,Jennifer,Summers,59,biology
+145,April,Snyder,58,biology
+148,Walter,Pratt,60,biology

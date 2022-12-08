@@ -1,0 +1,10 @@
+,name,attendance,subject
+726,Norma Fisher,60,p.e
+732,Stephanie Collins,60,p.e
+737,Kimberly Smith,0,p.e
+738,Jennifer Summers,60,p.e
+739,April Snyder,60,p.e
+740,Dana Nguyen,60,p.e
+742,Walter Pratt,60,p.e
+743,Bobby Flores,60,p.e
+749,Collin Lopez,60,p.e

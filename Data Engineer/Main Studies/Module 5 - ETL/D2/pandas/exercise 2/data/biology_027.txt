@@ -1,0 +1,6 @@
+,firstname,surname,attendance,subject
+817,Peter,Mcdowell,60,biology
+818,Sarah,Villanueva,60,biology
+821,Stephanie,Lawrence,60,biology
+834,Susan,Levy,60,biology
+836,Kimberly,Smith,60,biology

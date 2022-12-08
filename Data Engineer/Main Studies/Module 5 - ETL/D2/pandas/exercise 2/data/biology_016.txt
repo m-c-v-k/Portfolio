@@ -1,0 +1,6 @@
+,firstname,surname,attendance,subject
+480,Tasha,Rodriguez,60,biology
+484,Janice,Johnston,60,biology
+486,Mary,Alvarez,54,biology
+496,Jorge,Sullivan,60,biology
+501,Stephanie,Collins,60,biology

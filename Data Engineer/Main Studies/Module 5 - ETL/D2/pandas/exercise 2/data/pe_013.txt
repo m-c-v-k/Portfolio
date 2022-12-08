@@ -1,0 +1,12 @@
+,name,attendance,subject
+392,Stephanie Lawrence,60,p.e
+395,Angela Salazar,60,p.e
+396,Norma Fisher,50,p.e
+397,Jorge Sullivan,60,p.e
+407,Kimberly Smith,60,p.e
+408,Jennifer Summers,60,p.e
+410,Dana Nguyen,60,p.e
+415,Michelle Kelley,60,p.e
+416,Kimberly Maynard,60,p.e
+417,Laurie Wallace,60,p.e
+419,Collin Lopez,47,p.e

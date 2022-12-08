@@ -1,0 +1,9 @@
+,firstname,surname,attendance,subject
+842,Bobby,Flores,60,biology
+844,Michelle,Kelley,60,biology
+847,Janice,Johnston,60,biology
+853,Desiree,Cain,60,biology
+865,Stephanie,Sutton,60,biology
+867,Susan,Levy,60,biology
+868,Sean,Green,59,biology
+869,Kimberly,Smith,60,biology

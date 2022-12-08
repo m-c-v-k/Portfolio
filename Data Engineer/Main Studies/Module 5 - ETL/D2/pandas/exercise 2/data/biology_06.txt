@@ -1,0 +1,9 @@
+,firstname,surname,attendance,subject
+187,Janice,Johnston,60,biology
+189,Mary,Alvarez,60,biology
+191,Sarah,Villanueva,0,biology
+197,Angela,Salazar,60,biology
+202,Peter,Montgomery,60,biology
+204,Stephanie,Collins,60,biology
+206,Brian,Hamilton,60,biology
+209,Kimberly,Smith,60,biology

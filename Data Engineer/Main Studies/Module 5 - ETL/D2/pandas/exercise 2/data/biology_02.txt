@@ -1,0 +1,8 @@
+,firstname,surname,attendance,subject
+63,Lauren,Hayes,60,biology
+64,Whitney,Stark,60,biology
+65,Angela,Salazar,60,biology
+67,Jorge,Sullivan,40,biology
+73,Stephanie,Sutton,60,biology
+83,Bobby,Flores,60,biology
+84,Tasha,Rodriguez,60,biology

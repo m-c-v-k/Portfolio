@@ -1,0 +1,9 @@
+,firstname,surname,attendance,subject
+630,Susan,Wagner,60,biology
+631,Peter,Montgomery,60,biology
+632,Theodore,Mcgrath,60,biology
+635,Brian,Hamilton,60,biology
+636,Susan,Levy,60,biology
+642,Cheryl,Bradley,60,biology
+655,Desiree,Cain,60,biology
+659,Angela,Salazar,0,biology

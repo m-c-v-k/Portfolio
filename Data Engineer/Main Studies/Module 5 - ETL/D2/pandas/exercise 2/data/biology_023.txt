@@ -1,0 +1,7 @@
+,firstname,surname,attendance,subject
+691,Whitney,Stark,0,biology
+692,Angela,Salazar,60,biology
+695,Elizabeth,Woods,60,biology
+698,Theodore,Mcgrath,60,biology
+699,Stephanie,Collins,60,biology
+706,April,Snyder,49,biology
