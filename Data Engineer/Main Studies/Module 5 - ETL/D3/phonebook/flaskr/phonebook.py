@@ -10,7 +10,7 @@ class SQLWriter:
     def get_data(self, dbname):
         if not (self.engine.has_table(dbname)):
             return []
-        return pd.read_sql(dbname, self.engine, columns=["name", "number", "address"])
+        return pd.read_sql(dbname, self.engine, columns=["name", "number", "address", "added"])
 
     def write_to(self, dbname, df):
         df.to_sql(dbname, self.engine, if_exists="replace")
@@ -42,8 +42,8 @@ class Phonebook:
 
     def get_rows(self, rows):
         df = self.get_data()
-        select = df.iloc[:int(rows), :]
-        return select.to_json(orient="records")
+        df = df.head(int(rows))
+        return df.to_json(orient="records")
 
     def get_by_address(self, address):
         df = self.get_data()
@@ -51,3 +51,9 @@ class Phonebook:
 
     def add(self, entry):
         self.write_to(entry)
+
+    def delete_by_name(self, full_name):
+        df = self.get_data().drop(full_name, axis=0, inplace=true)
+        self.save_all_updates()
+
+        return "Entry deleted"
