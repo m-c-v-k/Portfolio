@@ -41,3 +41,8 @@ def get_phonebook_rows(num_of_rows):
 @app.route("/phonebook/address/<address_query>")
 def get_by_address(address_query):
     return phonebook.get_by_address(address_query)
+
+
+@app.route("/phonebook/date/<start_month>/<end_month>", methods=['GET'])
+def get_by_date(start_month, end_month):
+    return phonebook.get_by_date(start_month, end_month)

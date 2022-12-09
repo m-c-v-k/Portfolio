@@ -53,7 +53,19 @@ class Phonebook:
         self.write_to(entry)
 
     def delete_by_name(self, full_name):
-        df = self.get_data().drop(full_name, axis=0, inplace=true)
+
+        self.data = self.get_data()
+
+        self.data.drop(
+            index=self.data[(self.data.name == full_name)].index, inplace=True)
         self.save_all_updates()
 
         return "Entry deleted"
+
+    def get_by_date(self, start_month, end_month):
+        df = self.get_data()
+        df['added'] = pd.to_datetime(df['added'])
+
+        mask = (df['added'] >= start_month) & (df['added'] <= end_month)
+
+        return df.loc[mask].to_json(orient="records")

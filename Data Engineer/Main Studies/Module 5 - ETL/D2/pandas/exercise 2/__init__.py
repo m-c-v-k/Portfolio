@@ -70,7 +70,7 @@ math_df = gather_subject_df('math')
 pe_df = gather_subject_df('pe')
 physics_df = gather_subject_df('physics')
 
-logy_df = join_names(biology_df, 'biology')
+biology_df = join_names(biology_df, 'biology')
 herbology_df = join_names(herbology_df, 'herbology')
 math_df = join_names(math_df, 'math')
 pe_df = join_names(pe_df, 'pe')
@@ -82,6 +82,6 @@ math_df = change_late(math_df, 'math')
 pe_df = change_late(pe_df, 'pe')
 physics_df = change_late(physics_df, 'physics')
 
-all_df = [logy_df, herbology_df, math_df, pe_df, physics_df]
+all_df = [biology_df, herbology_df, math_df, pe_df, physics_df]
 
 late_df = check_late(all_df)
