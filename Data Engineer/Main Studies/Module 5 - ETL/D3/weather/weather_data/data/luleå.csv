@@ -1,0 +1,2 @@
+visibility,weather.id,weather.main,weather.description,weather.icon,main.temp,main.feels_like,main.temp_min,main.temp_max,main.pressure,main.humidity,wind.speed,wind.deg,clouds.all
+6000,600,Snow,light snow,13n,269.21,263.93,269.21,269.21,1017,100,4.12,60,100

@@ -1,0 +1,2 @@
+visibility,weather.id,weather.main,weather.description,weather.icon,main.temp,main.feels_like,main.temp_min,main.temp_max,main.pressure,main.humidity,wind.speed,wind.deg,clouds.all
+2500,701,Mist,mist,50n,272.6,272.6,272.4,272.97,1011,100,0.51,80,75

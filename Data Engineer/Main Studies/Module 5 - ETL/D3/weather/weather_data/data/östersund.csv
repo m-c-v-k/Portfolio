@@ -1,0 +1,2 @@
+visibility,weather.id,weather.main,weather.description,weather.icon,main.temp,main.feels_like,main.temp_min,main.temp_max,main.pressure,main.humidity,wind.speed,wind.deg,clouds.all
+10000,803,Clouds,broken clouds,04n,261.56,255.62,261.56,261.56,1013,85,3.09,350,82
