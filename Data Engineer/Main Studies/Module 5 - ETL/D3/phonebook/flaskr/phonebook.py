@@ -1,4 +1,5 @@
 from sqlalchemy import create_engine  # sql driver
+from datetime import date
 import pandas as pd
 
 
@@ -50,6 +51,10 @@ class Phonebook:
         return df[df['address'].str.contains(address)].to_json(orient="records")
 
     def add(self, entry):
+        from datetime import date
+        today = date.today()
+        if entry['added'] < today:
+            entry['added'] = today
         self.write_to(entry)
 
     def delete_by_name(self, full_name):
