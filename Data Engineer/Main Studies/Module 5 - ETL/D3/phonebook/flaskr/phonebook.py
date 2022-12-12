@@ -72,3 +72,11 @@ class Phonebook:
         df = df.loc[df['added'].between(start, end)]
 
         return df.to_json(orient="records")
+
+        """
+        df = df['added'] = pd.to_datetime(df['added'])
+
+        mask = (df['added'] >= start_month) & (df['added'] <= end_month)
+
+        return df.loc[mask].to_json(orient="records")
+        """
