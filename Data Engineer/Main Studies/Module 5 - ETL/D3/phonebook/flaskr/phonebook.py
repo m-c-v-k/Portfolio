@@ -53,7 +53,7 @@ class Phonebook:
     def add(self, entry):
         from datetime import date
         today = date.today()
-        if entry['added'] < today:
+        if entry['added'] < str(today):
             entry['added'] = today
         self.write_to(entry)
 

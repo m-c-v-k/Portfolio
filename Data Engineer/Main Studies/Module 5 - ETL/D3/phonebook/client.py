@@ -3,7 +3,8 @@ import requests
 data = {"entry": {
     "name": "Jakob Rolandsson",
     "number": "0725080995",
-    "address": "Häraldsvägen 3B"
+    "address": "Häraldsvägen 3B",
+    "added": "2018-02-12"
 }}
 
 
