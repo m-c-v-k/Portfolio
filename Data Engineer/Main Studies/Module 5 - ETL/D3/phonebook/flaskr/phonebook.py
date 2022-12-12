@@ -67,10 +67,8 @@ class Phonebook:
 
         return "Entry deleted"
 
-    def get_by_date(self, start_month, end_month):
+    def get_by_date(self, start, end):
         df = self.get_data()
-        df['added'] = pd.to_datetime(df['added'])
+        df = df.loc[df['added'].between(start, end)]
 
-        mask = (df['added'] >= start_month) & (df['added'] <= end_month)
-
-        return df.loc[mask].to_json(orient="records")
+        return df.to_json(orient="records")
