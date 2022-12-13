@@ -1,14 +1,26 @@
 import requests
-import json
+
+version = '1.0'
+parameter = '1'
+station = '53530'
+ext = 'json'
 
 r = requests.get(
-    "https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/16/lat/58/data.json")
+    f"""https://opendata-download-metobs.smhi.se/api/version/{version}/parameter/{parameter}/station/{station}.{ext}""")
 
-#print(json.dumps(r.json(), indent=4, sort_keys=True))
+# print(json.dumps(r.json(), indent=4, sort_keys=True))
 
+print(r)
 
-# print(r.json()['timeSeries'])
-for item in r.json()['timeSeries']:
-    print(item['validTime'])
-    for entry in item['parameters']:
-        print(entry)
+print(r.json()['key'])
+"""for item in r.json()['key']:
+    print(item)
+
+['station']:
+    if item['name'] == "Hörby A":
+        print(item['name'])
+        for entry in item:
+            print(entry)
+            for a in entry:
+                print(a)
+"""
