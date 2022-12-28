@@ -108,6 +108,7 @@ def plot_bar_sales(year):
             colors.append('b')
 
     plt.plot(df['Manad'], df[f'{year}'])
+
     plt.bar(df['Manad'], df[f'{year}'], color=colors)
     plt.title('Försäljning 2019')
     plt.xlabel('Månader')
