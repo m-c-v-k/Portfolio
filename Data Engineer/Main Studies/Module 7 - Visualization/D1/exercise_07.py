@@ -10,7 +10,7 @@ CURR_DIR_PATH = os.path.dirname(os.path.realpath(__file__))
 data_path = f'{CURR_DIR_PATH}/data/forsaljning.csv'
 
 df = pd.read_csv(data_path)
-"""
+
 # 7.a
 
 
@@ -92,8 +92,6 @@ bar_sales('2021')
 # 7.d
 # Bar shows the best stand-alone information for whole months at a smaller interval the plot would have been better
 # If a combination is possible a combination of bar and plot would be even better.
-
-"""
 
 
 def plot_bar_sales(year):
