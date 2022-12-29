@@ -1,5 +1,4 @@
 # Imporing necessary libraries
-from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 import pandas as pd
 import os
