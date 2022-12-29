@@ -32,7 +32,6 @@ def sales_bar(year):
     plt.close()
 
 
-"""
 # 1.a
 sales_plot('2021')
 
@@ -43,7 +42,7 @@ sales_plot('2022')
 sales_bar('2021')
 
 # 1.d
-sales_bar('2022')"""
+sales_bar('2022')
 
 # 2 Plotly
 
