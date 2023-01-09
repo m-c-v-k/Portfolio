@@ -18,7 +18,7 @@ df = {
 
 
 def select_df(data):
-    x_data = df[f'x{data}']
+    x_data = df['x0']
     y_data = df[f'y{data}']
 
     return x_data, y_data
