@@ -2,6 +2,7 @@
 
 # Importing necessary libraries
 import plotly.express as px
+from plotly.subplots import make_subplots
 import pandas as pd
 import os
 from dash import Dash
@@ -17,14 +18,94 @@ data_path = f'{CURR_DIR_PATH}/../D1/data/forsaljning.csv'
 
 df = pd.read_csv(data_path)
 
+app = Dash(__name__)
 
-def select_data(year):
-    data_year = df[f'{year}']
+app.layout = html.Div([
+    dcc.Checklist(
+        id='checklist',
+        options=[
+            {'label': '2019', 'value': '2019'},
+            {'label': '2020', 'value': '2020'},
+            {'label': '2021', 'value': '2021'},
+        ],
+        value=['2019']
+    ),
+    dcc.Graph(
+        id='graph_plotly'
+    ),
+])
 
-    return data_year
+
+@app.callback(
+
+    Output(component_id='graph_plotly',
+           component_property='figure'),
+    [Input(component_id='checklist',
+           component_property='value')]
+)
+def graph_update(checkbox_values):
+    print(checkbox_values)
+    print(len(checkbox_values))
+
+    figure = make_subplots()
+
+    if len(checkbox_values) == 1:
+        figure.add_trace(
+            px.line(
+                x=df['Manad'],
+                y=df[checkbox_values[0]]
+            )
+        )
+
+    elif len(checkbox_values) == 2:
+        figure.add_trace(
+            px.line(
+                x=df['Manad'],
+                y=df[checkbox_values[0]]
+            )
+        )
+
+        figure.add_trace(
+            px.line(
+                x=df['Manad'],
+                y=df[checkbox_values[1]]
+            )
+        )
+
+    elif len(checkbox_values) == 3:
+        figure.add_trace(
+            px.line(
+                x=df['Manad'],
+                y=df[checkbox_values[0]]
+            )
+        )
+
+        figure.add_trace(
+            px.line(
+                x=df['Manad'],
+                y=df[checkbox_values[1]]
+            )
+        )
+
+        figure.add_trace(
+            px.line(
+                x=df['Manad'],
+                y=df[checkbox_values[2]]
+            )
+        )
+
+    # figure = select_plot_type('line', checkbox_values[0])
+    # figure = select_plot_type('line', checkbox_values[1])
+
+    figure.update_layout(
+        width=800,
+        height=600,
+        title=f'Försäljning {checkbox_values}',
+        xaxis_title='Månad',
+        yaxis_title='Försäljning i tkr'
+    )
+
+    return figure
 
 
-def select_plot_type(type, data):
-    print('test')
-    df['']
-    fig = px.type(x=df['Manad'])
+app.run_server()
