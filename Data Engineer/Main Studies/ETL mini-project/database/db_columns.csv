@@ -1,0 +1,19 @@
+﻿Parameter;Column name
+msl;air_pressure
+t;air_temperature
+vis;horizontal_visibility
+wd;wind_direction
+ws;wind_speed
+r;relative_humidity
+tstm;thunder_probability
+tcc_mean;mean_value of total cloud cover
+lcc_mean;mean_value_of_low_level_cloud_cover
+mcc_mean;mean_value_of_medium_level_cloud_cover
+hcc_mean;mean_value_of_high_level_cloud_cover
+gust;wind_gust_speed
+pmin;minimum_precipitation_intensity
+pmax;maximum_precipitation_intensity
+spp;percent_of_precipitation_in_frozen_form
+pcat;precipitation_category
+pmean;mean_precipitation_intensity
+pmedian;median_precipitation_intensity
